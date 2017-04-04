@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.30)  31 MAR 2017 21:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.30)  4 APR 2017 11:53
 entering extended mode
 **./MODELS-2017.tex
 (MODELS-2017.tex
@@ -262,38 +262,122 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 65.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\hypcap.sty"
 Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 )
-(MODELS-2017.aux)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count105
+\lst@gtempboxa=\box28
+\lst@token=\toks16
+\lst@length=\count106
+\lst@currlwidth=\dimen132
+\lst@column=\count107
+\lst@pos=\count108
+\lst@lostspace=\dimen133
+\lst@width=\dimen134
+\lst@newlines=\count109
+\lst@lineno=\count110
+\lst@maxwidth=\dimen135
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count111
+\lst@skipnumbers=\count112
+\lst@framebox=\box29
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen136
+\captionmargin@=\dimen137
+\captionwidth=\dimen138
+\caption@tempdima=\dimen139
+\caption@indent=\dimen140
+\caption@parindent=\dimen141
+\caption@hangindent=\dimen142
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi .
+\c@ContinuedFloat=\count113
+Package caption Info: hyperref package is loaded.
+Package caption Info: hypcap package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@KVtest=\count114
+\sf@farskip=\skip45
+\sf@captopadj=\dimen143
+\sf@capskip=\skip46
+\sf@nearskip=\skip47
+\c@subfigure=\count115
+\c@subfigure@save=\count116
+\c@lofdepth=\count117
+\c@subtable=\count118
+\c@subtable@save=\count119
+\c@lotdepth=\count120
+\sf@top=\skip48
+\sf@bottom=\skip49
+) (MODELS-2017.aux)
 \openout1 = `MODELS-2017.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 317.
-LaTeX Font Info:    ... okay on input line 317.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 317.
-LaTeX Font Info:    ... okay on input line 317.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 317.
-LaTeX Font Info:    ... okay on input line 317.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 317.
-LaTeX Font Info:    ... okay on input line 317.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 317.
-LaTeX Font Info:    ... okay on input line 317.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 317.
-LaTeX Font Info:    ... okay on input line 317.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 317.
-LaTeX Font Info:    ... okay on input line 317.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 325.
+LaTeX Font Info:    ... okay on input line 325.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 325.
+LaTeX Font Info:    ... okay on input line 325.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 325.
+LaTeX Font Info:    ... okay on input line 325.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 325.
+LaTeX Font Info:    ... okay on input line 325.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 325.
+LaTeX Font Info:    ... okay on input line 325.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 325.
+LaTeX Font Info:    ... okay on input line 325.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 325.
+LaTeX Font Info:    ... okay on input line 325.
 
 -- Lines per column: 56 (exact).
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen132
-\scratchbox=\box28
-\nofMPsegments=\count106
-\nofMParguments=\count107
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen133
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count121
+\scratchdimen=\dimen144
+\scratchbox=\box30
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen145
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
+\everyMPtoPDFconversion=\toks18
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -307,7 +391,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box29
+\AtBeginShipoutBox=\box31
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -317,7 +401,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 317.
+Package hyperref Info: Link coloring ON on input line 325.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -325,270 +409,132 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count111
+\c@section@level=\count127
 )
-LaTeX Info: Redefining \ref on input line 317.
-LaTeX Info: Redefining \pageref on input line 317.
-LaTeX Info: Redefining \nameref on input line 317.
+LaTeX Info: Redefining \ref on input line 325.
+LaTeX Info: Redefining \pageref on input line 325.
+LaTeX Info: Redefining \nameref on input line 325.
 
 (MODELS-2017.out) (MODELS-2017.out)
 \@outlinefile=\write3
 \openout3 = `MODELS-2017.out'.
 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 370.
+\c@lstlisting=\count128
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 378.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 370.
+(Font)              <11> on input line 378.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 370.
+(Font)              <7.69997> on input line 378.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 370.
+(Font)              <5.5> on input line 378.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 370.
+(Font)              <8> on input line 378.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 370.
+(Font)              <6> on input line 378.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 370.
+(Font)              <5> on input line 378.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 370.
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ¨ in font ptmr7t!
-Missing character: There is no Å in font ptmr7t!
+(Font)              <7> on input line 378.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 423.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+<images/ide.png, id=83, 1156.32pt x 627.5445pt>
+File: images/ide.png Graphic file (type png)
+ <use images/ide.png>
+Package pdftex.def Info: images/ide.png used on input line 444.
+(pdftex.def)             Requested size: 252.0pt x 136.75793pt.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
-]
+ <./images/ide.png>]
+<images/eoml.png, id=113, 953.964pt x 380.01974pt>
+File: images/eoml.png Graphic file (type png)
+ <use images/eoml.png>
+Package pdftex.def Info: images/eoml.png used on input line 454.
+(pdftex.def)             Requested size: 252.0pt x 100.38582pt.
 
-LaTeX Warning: Reference `Abstraction in Software Modelling Learning' on page 2
- undefined on input line 414.
+<images/example-01a.png, id=118, 1083.44775pt x 356.532pt>
+File: images/example-01a.png Graphic file (type png)
 
+<use images/example-01a.png>
+Package pdftex.def Info: images/example-01a.png used on input line 463.
+(pdftex.def)             Requested size: 252.0pt x 82.92546pt.
 
-LaTeX Warning: Reference `Software Modelling Teaching' on page 2 undefined on i
-nput line 414.
+<images/example-01b.png, id=124, 658.8615pt x 241.50224pt>
+File: images/example-01b.png Graphic file (type png)
 
+<use images/example-01b.png>
+Package pdftex.def Info: images/example-01b.png used on input line 476.
+(pdftex.def)             Requested size: 252.0pt x 92.36876pt.
 
-LaTeX Warning: Reference `Design Requirements' on page 2 undefined on input lin
-e 414.
-
-
-LaTeX Warning: Reference `Gamified Software Modelling' on page 2 undefined on i
-nput line 414.
-
-
-LaTeX Warning: Reference `Gamified Software Modelling' on page 2 undefined on i
-nput line 416.
-
-
-LaTeX Warning: Reference `smlg' on page 2 undefined on input line 420.
-
-
-Underfull \vbox (badness 2762) has occurred while \output is active []
-
- [2]
-Overfull \hbox (1.48767pt too wide) in paragraph at lines 445--445
-[]\OT1/ptm/m/n/8 Category| 
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 476--477
+ [][] 
  []
 
+<images/example-01c.png, id=125, 658.8615pt x 242.1045pt>
+File: images/example-01c.png Graphic file (type png)
 
-Overfull \hbox (4.28712pt too wide) in paragraph at lines 445--445
-[]\OT1/ptm/m/n/8 Code| 
+<use images/example-01c.png>
+Package pdftex.def Info: images/example-01c.png used on input line 479.
+(pdftex.def)             Requested size: 252.0pt x 92.59912pt.
+
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 479--480
+ [][] 
  []
 
+<images/example-02b.png, id=130, 787.14075pt x 250.536pt>
+File: images/example-02b.png Graphic file (type png)
 
-Overfull \hbox (0.72751pt too wide) in paragraph at lines 447--448
-[]\OT1/ptm/m/n/8 Contents| 
+<use images/example-02b.png>
+Package pdftex.def Info: images/example-02b.png used on input line 490.
+(pdftex.def)             Requested size: 252.0pt x 80.20755pt.
+
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 490--491
+ [][] 
  []
 
+<images/example-02c.png, id=132, 787.14075pt x 252.945pt>
+File: images/example-02c.png Graphic file (type png)
 
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 448--448
-[]\OT1/ptm/m/n/8 RL01| 
+<use images/example-02c.png>
+Package pdftex.def Info: images/example-02c.png used on input line 493.
+(pdftex.def)             Requested size: 252.0pt x 80.97879pt.
+
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 493--494
+ [][] 
  []
 
+[2 <./images/eoml.png> <./images/example-01a.png> <./images/example-01b.png> <.
+/images/example-01c.png>]
+<images/example-03b.png, id=147, 747.9945pt x 298.11375pt>
+File: images/example-03b.png Graphic file (type png)
 
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 449--449
-[]\OT1/ptm/m/n/8 RL02| 
+<use images/example-03b.png>
+Package pdftex.def Info: images/example-03b.png used on input line 504.
+(pdftex.def)             Requested size: 252.0pt x 100.43391pt.
+
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 504--505
+ [][] 
  []
 
+<images/example-03c.png, id=148, 747.9945pt x 238.491pt>
+File: images/example-03c.png Graphic file (type png)
 
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 450--450
-[]\OT1/ptm/m/n/8 RL03| 
+<use images/example-03c.png>
+Package pdftex.def Info: images/example-03c.png used on input line 507.
+(pdftex.def)             Requested size: 252.0pt x 80.34712pt.
+
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 507--508
+ [][] 
  []
 
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 451--451
-[]\OT1/ptm/m/n/8 RL04| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 452--452
-[]\OT1/ptm/m/n/8 RL05| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 455--455
-[]\OT1/ptm/m/n/8 RL06| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 456--456
-[]\OT1/ptm/m/n/8 RL07| 
- []
-
-
-Overfull \hbox (1.15936pt too wide) in paragraph at lines 457--457
-[]\OT1/ptm/m/n/8 Practices| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 457--457
-[]\OT1/ptm/m/n/8 RL08| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 458--458
-[]\OT1/ptm/m/n/8 RL09| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 459--459
-[]\OT1/ptm/m/n/8 RL10| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 460--460
-[]\OT1/ptm/m/n/8 RL11| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 461--461
-[]\OT1/ptm/m/n/8 RL12| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 462--462
-[]\OT1/ptm/m/n/8 RL13| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 463--463
-[]\OT1/ptm/m/n/8 RL14| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 467--467
-[]\OT1/ptm/m/n/8 RL15| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 468--468
-[]\OT1/ptm/m/n/8 RL16| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 469--469
-[]\OT1/ptm/m/n/8 RL17| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 470--470
-[]\OT1/ptm/m/n/8 RL18| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 471--471
-[]\OT1/ptm/m/n/8 RL19| 
- []
-
-
-Overfull \hbox (5.62315pt too wide) in paragraph at lines 472--472
-[]\OT1/ptm/m/n/8 RL20| 
- []
-
-
-LaTeX Warning: Reference `table:preliminary-survey' on page 3 undefined on inpu
-t line 478.
-
-<images/learning-models.png, id=149, 548.0475pt x 330.63525pt>
-File: images/learning-models.png Graphic file (type png)
-
-<use images/learning-models.png>
-Package pdftex.def Info: images/learning-models.png used on input line 488.
-(pdftex.def)             Requested size: 252.0pt x 152.03352pt.
-
-<images/learning-models2.png, id=150, 489.62926pt x 369.7815pt>
-File: images/learning-models2.png Graphic file (type png)
-
-<use images/learning-models2.png>
-Package pdftex.def Info: images/learning-models2.png used on input line 495.
-(pdftex.def)             Requested size: 252.0pt x 190.31827pt.
- [3 <./images/learning-models.png>]
-
-LaTeX Warning: Reference `Elaborating Design and Learning Models' on page 4 und
-efined on input line 511.
-
-
-Overfull \hbox (1.48767pt too wide) in paragraph at lines 516--516
-[]\OT1/ptm/m/n/8 Category| 
- []
-
-
-Overfull \hbox (4.28712pt too wide) in paragraph at lines 516--516
-[]\OT1/ptm/m/n/8 Code| 
- []
-
-
-Overfull \hbox (1.15964pt too wide) in paragraph at lines 518--518
-[]\OT1/ptm/m/n/8 Learning| 
- []
-
-
-Overfull \hbox (7.84709pt too wide) in paragraph at lines 518--518
-[]\OT1/ptm/m/n/8 RM01| 
- []
-
-
-Overfull \hbox (7.84709pt too wide) in paragraph at lines 519--519
-[]\OT1/ptm/m/n/8 RM02| 
- []
-
-
-Underfull \hbox (badness 5490) in paragraph at lines 519--520
-[]\OT1/ptm/m/n/8 Design suf-fices Kolb's ex-pe-ri-en-tial learn-ing
- []
-
-
-Overfull \hbox (7.84709pt too wide) in paragraph at lines 520--520
-[]\OT1/ptm/m/n/8 RM03| 
- []
-
-
-Overfull \hbox (7.84709pt too wide) in paragraph at lines 521--521
-[]\OT1/ptm/m/n/8 RM04| 
- []
-
-
-Overfull \hbox (7.84709pt too wide) in paragraph at lines 522--522
-[]\OT1/ptm/m/n/8 RM05| 
- []
-
-[4 <./images/learning-models2.png>]
-
-LaTeX Warning: Reference `Application of Deterding's Gameful Design Steps' on p
-age 5 undefined on input line 541.
-
-
-LaTeX Warning: Reference `Storyboards' on page 5 undefined on input line 541.
-
-<images/work-cycle.png, id=187, 663.07726pt x 273.4215pt>
-File: images/work-cycle.png Graphic file (type png)
-
-<use images/work-cycle.png>
-Package pdftex.def Info: images/work-cycle.png used on input line 546.
-(pdftex.def)             Requested size: 252.0pt x 103.91376pt.
- (MODELS-2017.bbl [5 <./images/work-cycle.png>]
-Missing character: There is no ‚ in font ptmri7t!
-Missing character: There is no Ä in font ptmri7t!
-Missing character: There is no ô in font ptmri7t!
-)
+(MODELS-2017.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -600,39 +546,35 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 710.
-[6
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 710.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 675.
+[3 <./images/example-02b.png> <./images/example-02c.png> <./images/example-03b.
+png> <./images/example-03c.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 675.
  (MODELS-2017.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 710.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 710.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 675.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 675.
 Package rerunfilecheck Info: File `MODELS-2017.out' has not changed.
-(rerunfilecheck)             Checksum: 3A87AC8F0D010797063DC47F87E59991;1035.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 710.
+(rerunfilecheck)             Checksum: 1DBC4F95B9B6ABDBED7048DA601909BB;1134.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 675.
  ) 
 Here is how much of TeX's memory you used:
- 6120 strings out of 493334
- 96049 string characters out of 3136675
- 196429 words of memory out of 3000000
- 9551 multiletter control sequences out of 15000+200000
- 41327 words of font info for 77 fonts, out of 3000000 for 9000
+ 8668 strings out of 493334
+ 137315 string characters out of 3136675
+ 262237 words of memory out of 3000000
+ 12073 multiletter control sequences out of 15000+200000
+ 38120 words of font info for 76 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 35i,12n,28p,2178b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,49p,1017b,1131s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/urw/times/utmri8a.pfb>
-Output written on MODELS-2017.pdf (6 pages, 206464 bytes).
+iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on MODELS-2017.pdf (3 pages, 750563 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
