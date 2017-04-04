@@ -67,7 +67,6 @@
 \usepackage{listings}
 	\lstset{
   		frame=single,
- 		language=C,
   		basicstyle=\ttfamily\scriptsize,
   		breaklines=true
 	}
@@ -336,7 +335,7 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Alfa Yohannis\IEEEauthorrefmark{1}, Dimitris Kolovos, Fiona Pollack}
+\author{\IEEEauthorblockN{Alfa Yohannis\IEEEauthorrefmark{1}, Dimitris Kolovos, Fiona Polack}
 \IEEEauthorblockA{Department of Computer Science\\
 University of York\\
 York, United Kingdom\\
@@ -400,7 +399,6 @@ In
 
 
 \section{Introduction}
-Test citing \cite{von2004design}
 
 \section{Rationale}
 
@@ -418,7 +416,7 @@ In this section, an example is presented to demonstrate the use of the platform.
 \subsection{Define Statechart Metamodel}
 In order for the platform to support modelling in statechart diagram, designers have to define its metamodel first. The metamodel is written in Emfatic (\url{https://www.eclipse.org/emfatic}) and Eugenia-like annotations \cite{kolovos2015eugenia} are used to define its concrete syntax. For example, the definition of Start State derived from Node class is displayed in Fig. \ref{metamodel}. Other basic elements of statechart diagram, such as states, transitions, end states, etc., are also defined but not displayed in the figure.  
 
-\begin{figure}[t!]
+\begin{figure}[th]
 \centering
 \begin{lstlisting}
 abstract class Node extends Entity {
@@ -439,7 +437,7 @@ The annotated metamodel then trasformed using Epsilon \cite{kolovos2010epsilon} 
 \subsection{Create Statechart Model}
 Using the MxGraph-based graphical editor (Fig. \ref{ide}), designers can now create statechart models. The editor has a pallete on the left side that contains elements of statechart's elements which they can drag and drop into a drawing area on the centre where they can arrange the elements to construct statechart models. The editor also has a property panel on the right side to modify the attributes and appearance of the models. Models that have been created can be saved and loaded again for further operations. The editor also can be used to create models as input/base models to be embedded in learning activities.        
 
-\begin{figure}[t!]
+\begin{figure}[th]
 \centering
 \includegraphics[width=\linewidth]{ide}
 \caption{The MxGraph-based graphical editor to create statechart models.}
@@ -449,7 +447,7 @@ Using the MxGraph-based graphical editor (Fig. \ref{ide}), designers can now cre
 \subsection{Create Learning Pattern Model}
 To teach and learn a concept, designers have to design a learning pattern that consists of ordered learning activities. In this example, a learning pattern to learn the concept of substates is created (Fig. \ref{eoml}). The case that is selected is an electrical fan that has two main states, Idle and Blowing. Learners will be asked to modify the Blowing state so it becomes composite state that has several substates that represent different speed of blowing. The learning pattern has three activities, namely One-Speed Fan, Two-Speed Fan, and Tree-Speed Fan. The activities are arranged \textit{per se} to accommodate Flow state \cite{csikszentmihalyi2014toward} so learners can start learning from the easiest activity to the hardest one. The activities are explained in more detail  in the next following subsections.
   
-\begin{figure}[t!]
+\begin{figure}[th]
 \centering
 \includegraphics[width=\linewidth]{eoml}
 \caption{A learning activity pattern for learning the concept of Substates in state-machine modelling.}
@@ -458,7 +456,7 @@ To teach and learn a concept, designers have to design a learning pattern that c
 
 Each activity has lesson and instruction properties. Lesson contains explanation about the concepts that are being taught and instruction contains commands or questions that learners need to execute or answer. In the process of satisfying the instruction in each activity, one or more objectives have to be met by learners in order to move to next activity. Also, each activity can consume existing models (Model A, B, and C in Fig. \ref{eoml}) as its base models so learners do not have to create a model from scratch and produce model (Model B in Fig. \ref{eoml}) to be used in its next activity. Each of the models also has a description property to describe itself which is very useful for learners to understand about the model. An example of the lesson, model description, and instruction properties of the One-Speed Fan activity (Fig. \ref{eoml}) is displayed in Fig. \ref{example-01a}.    
 
-\begin{figure}[t!]
+\begin{figure}[th]
 \centering
 \includegraphics[width=\linewidth]{example-01a}
 \caption{Lesson, model description, and instruction.}
@@ -468,9 +466,9 @@ Each activity has lesson and instruction properties. Lesson contains explanation
 \subsubsection{One-Speed Fan Activity}
 In this activity (Fig. \ref{example-01}), learners are introduced to one substate only.The activity start with a base model and learners are required to modify the base model (Fig. \ref{example-01b}) to meet the target model (Fig. \ref{example-01c}). The base model corresponds to Model A in Fig. \ref{eoml}, which refers to an existing model that already created previously and will be loaded once the activity is executed so leaners do not need to create the model from the start. 
 
-The example case in this activity is a fan that has three buttons, a Power Button to turn on/off, a Button 1 to start blowing, and a Button 0 to stop blowing. So far it has only one speed, Speed 1, but is planned to have more than one speed. Learners are asked to modify the Blowing state in Fig. \ref{example-01b} into a composite state through moving the Speed 1 state into the Blowing state compartment as well as to connect the Button 1 Pressed transition from the Idle state to the Speed 1 state. 
+The example case in this activity is a fan that has three buttons, a Power Button to turn on/off, a Button 1 to start blowing, and a Button 0 to stop blowing. So far it has only one speed, Speed 1, but is planned to have more than one speed. Learners are asked to modify the Blowing state in Fig. \ref{example-01b} into a composite state through moving the Speed 1 state into the Blowing state compartment as well as to connect the Button 1 Pressed transition from the Idle state to the Speed 1 state. Since in Fig. \ref{eoml} this activity is designed to have only two objectives, the two objectives are adjusted and defined as follow: Objective 1 "Blowing state contains Speed 1 substate" and Objective 2 "Button 1 Pressed transition connects Idle state to Speed 1 substate".
 
-\begin{figure}[t!]
+\begin{figure}[th]
     \centering
     \subfloat[Base model]{\includegraphics[width=\linewidth]{example-01b}	
     \label{example-01b}}
@@ -484,7 +482,7 @@ The example case in this activity is a fan that has three buttons, a Power Butto
 \subsubsection{Two-Speed Fan Activity}
 The Two-Speed Fan activity (Fig. \ref{example-02}) consumes the model that has been produced in the first activity (Model B in Fig. \ref{eoml}). Therefore, any model produced in the previous activity will become the base model for modelling in this activity. Inline to the Flow concept \cite{csikszentmihalyi2014toward}, this second activity has to be more challenging. Therefore, the activity (Fig. \ref{example-02}) challenge learners with one additional state and three new transitions. Now the case has changed. The fan has an additional button, Button 2, to support 2-speed blowing. When Button 1 is pressed, the fan blows in speed 1. When Button 2 is pressed, the fan blows in speed 2. Thus, Learners are required modify the Blowing state into a composite state so it has two speed states. The fan can move from the Idle state to the Speed 1 state, from the Idle state to the Speed 2 state, and from the Speed 1 state to the Speed 2 state or \textit{vice versa}.
 
-\begin{figure}[t!]
+\begin{figure}[th]
     \centering
     \subfloat[Base model]{\includegraphics[width=\linewidth]{example-02b}	
     \label{example-02b}}
@@ -498,7 +496,7 @@ The Two-Speed Fan activity (Fig. \ref{example-02}) consumes the model that has b
 \subsubsection{Three-Speed Fan Activity}
 The Three-Speed Fan activity (Fig. \ref{example-03}) should be more difficult than the second activity. The fan now supports 3 speeds of blowing, but it has been modified so it cannot go directly to Speed 2 and Speed 3 without firstly go the state with lower speed. In other words, transition from Idle can only go to Speed 1 for the fan to start blowing--Speed 2 and Speed 3 will not be working if transition comes from Idle state. Thus, starting from the model C as the base model as shown in Fig. \ref{eoml}, learners are required to modify the Blowing state into a composite state so it has 3 speeds of blowing and only allow transition from Idle to Speed 1 and from a speed that is lower from the intended one in order to blow.
 
-\begin{figure}[t!]
+\begin{figure}[th]
     \centering
     \subfloat[Base model]{\includegraphics[width=\linewidth]{example-03b}	
     \label{example-03b}}
@@ -511,12 +509,82 @@ The Three-Speed Fan activity (Fig. \ref{example-03}) should be more difficult th
 
 
 \subsection{Generate Game}
-After finishing constructing the learning pattern (Fig. \ref{eoml}), designers can now generate a path of levels (or stages) that is usually found in many games. Each generated level corresponds to an activity defined in the learning pattern. The generation also produces an EVL file for each level to be used for its validation whether the level has been completed or not. To complete a level, all of its objectives have to be met.   
+After finishing constructing the learning pattern (Fig. \ref{eoml}), designers can now generate a path of levels (or stages) that is usually found in many games. Each generated level corresponds to an activity defined in the learning pattern. The generation also produces an EVL \cite{kolovos2006eclipse} template for each level for its validation to determine whether the level has been completed, all of its objectives have been met, or not. The EVL template is shown in Fig. \ref{validation-template} which can be extended by designers to write code that fits with the level scenarios and objectives. The number of constraints and operations in the template corresponds to the number of objectives defined in the level's learning pattern activity in Fig. \ref{eoml}. As an example implementation of validation, Fig. \ref{validation-realisation} shows the EVL code of checking whether Blowing state has already Speed 1 substate as intended by Objective 1 in One-Speed activity.   
 
+\begin{figure}[th]
+\centering
+\begin{lstlisting}
+context Statechart {
+    constraint obj_1 {
+        check: 
+            self.obj_1()
+        message:
+            "FAIL: ob_1"
+    }
+    constraint obj_2 {
+        check: 
+            self.obj_2()
+        message:
+            "FAIL: obj_2"
+    }        
+}
+operation Statechart obj_1(): Boolean {
+    return true;
+}
+operation Statechart obj_2(): Boolean {
+    return true;
+}
+\end{lstlisting} 
+\caption{Validation template for objectives in One-Speed Fan activity/level.}
+\label{validation-template}
+\end{figure}
 
-Learners can choose the learning pattern if they want to learn substate concept in statechart modelling.    
+\begin{figure}[th]
+\centering
+\begin{lstlisting}
+context Statechart {
+    constraint obj_1 {
+        check: 
+            self.obj_1()
+        message:
+            "FAIL: Blowing state contains Speed 1 substate"
+    }
+    ...
+}
+operation Statechart obj_1(): Boolean {
+    for (state in State.allInstances.select(state | state.name == "Blowing")) {
+        if (state.substates.notEmpty() and state.substates.select(substate | substate.name == "Speed 1").notEmpty()){
+            return true;
+        }        
+    }
+    return false;
+}
+...
+\end{lstlisting} 
+\caption{Validation realisation for Objective 1 in One-Speed Fan activity/level.}
+\label{validation-realisation}
+\end{figure}
 
 \subsection{Play Game}
+After generating the learning pattern into a path of ordered levels and defining its levels' validation, Learners can choose the path and play its levels as depicted in Fig. \ref{path}. When learners choose the first level, an MxGraph-based editor is displayed. Lesson, model description, instruction, objectives, and base model are presented to learners. Learners then can start to modify the base model to reach the target model. 
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=\linewidth]{path}
+\caption{The path for learning substate concept with its levels.}
+\label{path}
+\end{figure}    
+
+Every attempt to change the model will trigger an operation to validate the current model using the defined EVL constraints to assess whether the current model has met the current level's objectives. If not, error messages are displayed to learners indicating the objectives that have not been satisfied. For example, in Fig. \ref{example-fail-messages}, the Speed 1 substate has not been put into the Blowing state even though the Button 1 Pressed transition has connected the Idle state to the Speed 1 substate. If all objectives have been fulfilled, learners have completed the level. A message that congratulate the learners is displayed to give positive reinforcement. Learners then are brought back to the learning path where they can choose the next level to play.  
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=\linewidth]{example-fail-messages}
+\caption{A message is displayed to learners indicating the objective that has not been fulfilled.}
+\label{example-fail-messages}
+\end{figure}  
+
+\section{Discussion}
 
 \section{Future Works}
 

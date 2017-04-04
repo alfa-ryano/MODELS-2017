@@ -21,11 +21,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{von2004design}
-R.~H. Von~Alan, S.~T. March, J.~Park, and S.~Ram, ``Design science in
-  information systems research,'' \emph{MIS quarterly}, vol.~28, no.~1, pp.
-  75--105, 2004.
-
 \bibitem{kolovos2015eugenia}
 D.~S. Kolovos, A.~Garc{\'\i}a-Dom{\'\i}nguez, L.~M. Rose, and R.~F. Paige,
   ``Eugenia: towards disciplined and automated development of gmf-based
@@ -40,5 +35,10 @@ D.~Kolovos, L.~Rose, R.~Paige, and A.~Garc{\i}a-Dom{\i}nguez, ``The epsilon
 M.~Csikszentmihalyi, ``Toward a psychology of optimal experience,'' in
   \emph{Flow and the foundations of positive psychology}.\hskip 1em plus 0.5em
   minus 0.4em\relax Springer, 2014, pp. 209--226.
+
+\bibitem{kolovos2006eclipse}
+D.~S. Kolovos, R.~F. Paige, and F.~A. Polack, ``Eclipse development tools for
+  epsilon,'' in \emph{Eclipse Summit Europe, Eclipse Modeling Symposium}, vol.
+  20062, 2006, p. 200.
 
 \end{thebibliography}
