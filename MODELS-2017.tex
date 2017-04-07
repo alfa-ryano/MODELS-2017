@@ -329,7 +329,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Model-Driven\\Gamified Software Modelling Learning}
+\title{Towards Model-Driven\\Gamified Software Modelling Learning}
 
 
 % author names and affiliations
@@ -378,11 +378,14 @@ Email: \IEEEauthorrefmark{1}ary506@york.ac.uk}}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-In 
+\label{abstract}
+Backgrounded by the challenges in teaching and learning software modelling, this research harnesses the engaging nature of games, the effectiveness of pedagogy, and the automation of Model-driven Engineering to propose a platform for model-driven gamified software modelling learning. It is an environment for tutors where they can create new and make use of existing software modelling learning activities for teaching and for learners to learn software modelling topics in a gameful way. This paper presents the rationale of the idea behind the initiation of the platform as well as its design considerations which mostly are withdrawn from game, pedagogy, and model-driven domains. An introduction to the concept of substate is statechart modelling demonstrated to show how the platform works, and some identified significant challenges and open issues are also discussed as important lessons for further research and development.
 \end{abstract}
 
 % no keywords
-\begin{IEEEkeywords} gamified approach, software modelling learning, model-driven engineering\end{IEEEkeywords}
+\begin{IEEEkeywords} 
+model-driven, gameful, software modelling, learning, platform
+\end{IEEEkeywords}
 
 
 
@@ -401,6 +404,29 @@ In
 \section{Introduction}
 
 \section{Rationale}
+Software modelling teaching and learning (SMTL) has significant role in model-driven domain, since it establishes the very foundation in Model-driven Engineering (MDE) learners whom in the future will be MDE experts and practitioners. If the process of SMTL can be improved, it will bring benefits not just to learners but also to model-driven domain and wider related domains. So, what are the challenges in SMTL? How they should be addressed? 
+
+The first challenge is the abstraction. It is the very nature attribute of modelling since modelling is the process of thinking abstractly about systems \cite{bezivin2009teaching}. Some writers emphasise the cruciality of abstraction in computer science and software engineering \cite{Kramer2007, hazzan2008reflections, Saitta2013} in general as well as model-driven domain  \cite{engels2005teaching, borstler2012teaching, whittle2013industrial, brambilla2012model} in particular. 
+
+The nature of abstraction makes the concepts being learned are difficult to access since the concepts are only accessible through tangible representation, such as symbols and diagrams \cite{Duval2006}. Even though the abstract concepts have visualized, engagement can still be an issue, that is making learners to actively participate in learning processes. This is the condition where gameful approach comes into play to solve motivational issues. Game elements can be embedded into learning activities to present gameful experience.  
+
+Other problem is to posses abstraction skills--ability to perform abstractive operations, such as selecting the appropriate abstraction level, moving through different abstraction levels, and view abstraction from different perspectives. To learn the abstraction skills,  Some experts suggest that teaching and learning abstraction should start from familiarizing with real-world objects an then move upwards to abstraction through similarity \cite{engels2005teaching,white2010teaching}. However, the process of abstraction could continue to move downwards to reification and then finally to application\cite{white2010teaching}. Hazzan suggests that in order to grasp abstract concepts, they should be experienced--seen, felt, and used. Therefore, the concepts should be illustrated, reflected, and practised by learners \cite{hazzan2008reflections}. Supporting tutors to perform these approaches will help them tackling the abstraction challenge. 
+  
+The second challenge is the contents of SMTL. Some experts suggest the contents should be definitions, semantics, syntaxes, notations of modelling \cite{Borstler2012}, other experts point the core concepts of MDE--modelling, metamodelling, and model transformation--and their applications \cite{bezivin2009teaching}, and others prompt the engineering aspect of software modelling should not be neglected \cite{paige2014bad}. While main ideas of the contents have been proposed by experts, the detail structures how the contents should be organised is not clear yet. For example, statechart modelling has concepts of states, transitions, decisions, regions, and etc. There might be some structures that are best these concepts for teaching and learning statechart modelling and it is good to follow such structures. However, there are no 'one-for-all' structures that fit to all contexts, creativity of tutors, and learners. So rather than only following the best structures, it is best to support tutors to express organisation of the contents based on their preferences and needs, regardless whether they are inspired by the best structures or not.
+
+The third challenge is the teaching and learning Approaches. One approach in to teach software modelling broadly, throughout, and not deeply\cite{Borstler2012, paige2014bad}, so they learn to decide which modelling process is more appropriate than others \cite{Akayama2013}. Other approach is harnessing modelling tools which are very important to tackle large-scale modelling and ecourage to produce good models \cite{Akayama2013}. However, failure to provide enough supports (e.g. helpful instructions and expert tools) might overwhelm learners with unnecessary features \cite{liebel2015ready}. These are just two Approaches of many other Approaches proposed by experts in software modelling. On the other side, the field of pedagogy also have employed collections of approaches for teaching and learning in general, for examples, Bloom's taxonomy \cite{krathwohl2002revision}, Kolb's experiential learning \cite{kolb2014experiential}, and Keller's ARCS motivational model \cite{keller2010motivational}. All of these approaches are worth to be considered in SMTL and should not be neglected. However, considering the same reason that applies to contents there are no 'one-for-all' approaches, it is best to support tutors to design their own approaches in SMTL, whether they follows the existing approaches or their own creativity.   
+
+On the other side, MDE provides a convenient way to produce software \cite{stahl2006model}. The software itself could act as a platform for tutors to create 
+contents and approaches for teaching certain concepts in software modelling in the form of 
+learning activities and also for learners to engage with the learning activities. MDE offers the advantages to speed up the development of the learning activities. First, using the platform, tutors can harness a high-level visual modelling language to design the learning activities at high-level abstraction. Second, the platform automates the generation of runnable instances of the learning activity design, which with the runnable instances learners can perform software modelling learning.
+
+To sum up, in order to improve SMTL, two conditions have to be met. First, SMTL should be engaging for learners. This could be done through embedding game elements into learning activities. Second, SMTL should be creative. Tutors are given supports to create new and reuse existing SMTL contents and approaches, whether inspired by existing good practices or just according to their own creativity. Thus, to satisfy these conditions, a platform for model-driven gamified software modelling learning is proposed. It is an environment for tutors where they can create new and make use of existing software modelling learning activities for teaching and for learners to learn software modelling topics in a gameful way.
+
+Once the platform can be fully utilised, it will empower tutors to express their creativity in producing different patterns of learning activities, whether the learning activities are based on existing best practices or new approaches in teaching certain concepts in SMTL. The platform will also ease learners in learning software modelling since the learning activities are presented a gameful way. As soon as many learning activities are available, the learners can choose learning patterns that is best for them and exercise through many different patterns. 
+
+All interaction of tutors and learners with the platform can be logged and logs are the source of data which further could be used to extract knowledge to understand deeper about  teaching and learning behaviours in software modelling. Using analytical techniques, such as machine learning and data mining, questions like which part or learning activity that learners often make mistakes, what parts of software modelling that are most challenging for them, what strategies that they prefer to use to construct models for certain problems, and many other questions could be answered and understood. The understanding that could change the way software modelling is taught and learned. Moreover, the platform could also be a place for research and experiment. For example, comparing two learning patterns which one is better in teaching one same concept in software modelling and  investigating which shapes that are more appropriate to represent a certain concept in a visual modelling language. With further development, the platform could also support 'multiplayers' which means collaboration in SMTL could also be supported. This also means concepts like collaborative learning and content creation can also be tested and applied into SMTL. 
+
+
 
 \section{Design}
 
@@ -424,7 +450,7 @@ abstract class Node extends Entity {
   ref Edge[*]#target incoming;
 }
 
-@gmf.node(mxLabel="name", mxShape="startState", mxWhiteSpace="wrap", mxHtml="1", mxFillColor="#000000", mxWidth="30", mxHeight="30")
+@node(label="name", dhape="startState", whiteSpace="wrap", html="1", fillColor="#000000", width="30", height="30")
 class Start extends Node {
 }
 \end{lstlisting} 
@@ -584,9 +610,9 @@ Every attempt to change the model will trigger an operation to validate the curr
 \label{example-fail-messages}
 \end{figure}  
 
-\section{Discussion}
+\section{Challenges and Open Issues}
 
-\section{Future Works}
+\section{Related Works}
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
@@ -684,25 +710,12 @@ Every attempt to change the model will trigger an operation to validate the curr
 
 
 
-
-\section{Conclusion}
-The conclusion goes here.
-
-
-
-
 % conference papers do not normally have an appendix
 
 
 % use section* for acknowledgment
 \section*{Acknowledgment}
-
-
-The authors would like to thank...
-
-
-
-
+This research is part of a doctoral programme supported by \emph{Lembaga Pengelola Dana Pendidikan Indonesia} (Indonesia Endowment Fund for Education).
 
 % trigger a \newpage just before the given reference
 % number - used to balance the columns on the last page
