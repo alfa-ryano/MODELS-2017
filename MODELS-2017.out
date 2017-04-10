@@ -1,18 +1,15 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Rationale}{}% 2
-\BOOKMARK [1][-]{section.3}{Design}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Gameful Design}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Pedagogical Design}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.3}{Model-Driven Design}{section.3}% 6
-\BOOKMARK [1][-]{section.4}{Demonstration}{}% 7
-\BOOKMARK [2][-]{subsection.4.1}{Define Statechart Metamodel}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.2}{Create Statechart Model}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.3}{Create Learning Pattern Model}{section.4}% 10
-\BOOKMARK [3][-]{subsubsection.4.3.1}{One-Speed Fan Activity}{subsection.4.3}% 11
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Two-Speed Fan Activity}{subsection.4.3}% 12
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Three-Speed Fan Activity}{subsection.4.3}% 13
-\BOOKMARK [2][-]{subsection.4.4}{Generate Game}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.5}{Play Game}{section.4}% 15
-\BOOKMARK [1][-]{section.5}{Challenges and Open Issues}{}% 16
-\BOOKMARK [1][-]{section.6}{Related Works}{}% 17
-\BOOKMARK [1][-]{section*.2}{References}{}% 18
+\BOOKMARK [1][-]{section.2}{Problem Analysis}{}% 2
+\BOOKMARK [1][-]{section.3}{Solution Overview}{}% 3
+\BOOKMARK [1][-]{section.4}{Demonstration}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Define Statechart Metamodel}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Create Statechart Model}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Create Learning Pattern Model}{section.4}% 7
+\BOOKMARK [3][-]{subsubsection.4.3.1}{One-Speed Fan Activity}{subsection.4.3}% 8
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Two-Speed Fan Activity}{subsection.4.3}% 9
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Three-Speed Fan Activity}{subsection.4.3}% 10
+\BOOKMARK [2][-]{subsection.4.4}{Generate Game}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.5}{Play Game}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Evaluation Plans}{}% 13
+\BOOKMARK [1][-]{section.6}{Related Works}{}% 14
+\BOOKMARK [1][-]{section*.2}{References}{}% 15

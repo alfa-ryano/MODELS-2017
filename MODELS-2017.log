@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.30)  7 APR 2017 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.30)  10 APR 2017 20:28
 entering extended mode
 **./MODELS-2017.tex
 (MODELS-2017.tex
@@ -436,117 +436,122 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 447.
 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+LaTeX Warning: Citation `ryan2017self' on page 2 undefined on input line 417.
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 420--430
+\OT1/ptm/m/n/10 A model-to-text trans-for-ma-tion that pro-duces web-based
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 440.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-[2] <images/ide.png, id=154, 1156.32pt x 627.5445pt>
+) [2]
+<images/ide.png, id=132, 1156.32pt x 627.5445pt>
 File: images/ide.png Graphic file (type png)
  <use images/ide.png>
-Package pdftex.def Info: images/ide.png used on input line 468.
+Package pdftex.def Info: images/ide.png used on input line 461.
 (pdftex.def)             Requested size: 252.0pt x 136.75793pt.
 
-<images/eoml.png, id=157, 953.964pt x 380.01974pt>
+<images/eoml.png, id=135, 953.964pt x 380.01974pt>
 File: images/eoml.png Graphic file (type png)
  <use images/eoml.png>
-Package pdftex.def Info: images/eoml.png used on input line 478.
+Package pdftex.def Info: images/eoml.png used on input line 471.
 (pdftex.def)             Requested size: 252.0pt x 100.38582pt.
 
-<images/example-01a.png, id=162, 1083.44775pt x 356.532pt>
+<images/example-01a.png, id=140, 1083.44775pt x 356.532pt>
 File: images/example-01a.png Graphic file (type png)
 
 <use images/example-01a.png>
-Package pdftex.def Info: images/example-01a.png used on input line 487.
+Package pdftex.def Info: images/example-01a.png used on input line 480.
 (pdftex.def)             Requested size: 252.0pt x 82.92546pt.
 
-<images/example-01b.png, id=169, 658.8615pt x 241.50224pt>
+<images/example-01b.png, id=147, 658.8615pt x 241.50224pt>
 File: images/example-01b.png Graphic file (type png)
 
 <use images/example-01b.png>
-Package pdftex.def Info: images/example-01b.png used on input line 500.
+Package pdftex.def Info: images/example-01b.png used on input line 493.
 (pdftex.def)             Requested size: 252.0pt x 92.36876pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 500--501
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 493--494
  [][] 
  []
 
-<images/example-01c.png, id=170, 658.8615pt x 242.1045pt>
+<images/example-01c.png, id=148, 658.8615pt x 242.1045pt>
 File: images/example-01c.png Graphic file (type png)
 
 <use images/example-01c.png>
-Package pdftex.def Info: images/example-01c.png used on input line 503.
+Package pdftex.def Info: images/example-01c.png used on input line 496.
 (pdftex.def)             Requested size: 252.0pt x 92.59912pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 503--504
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 496--497
  [][] 
  []
 
 [3 <./images/ide.png> <./images/eoml.png> <./images/example-01a.png>]
-<images/example-02b.png, id=187, 787.14075pt x 250.536pt>
+<images/example-02b.png, id=166, 787.14075pt x 250.536pt>
 File: images/example-02b.png Graphic file (type png)
 
 <use images/example-02b.png>
-Package pdftex.def Info: images/example-02b.png used on input line 514.
+Package pdftex.def Info: images/example-02b.png used on input line 507.
 (pdftex.def)             Requested size: 252.0pt x 80.20755pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 514--515
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 507--508
  [][] 
  []
 
-<images/example-02c.png, id=189, 787.14075pt x 252.945pt>
+<images/example-02c.png, id=168, 787.14075pt x 252.945pt>
 File: images/example-02c.png Graphic file (type png)
 
 <use images/example-02c.png>
-Package pdftex.def Info: images/example-02c.png used on input line 517.
+Package pdftex.def Info: images/example-02c.png used on input line 510.
 (pdftex.def)             Requested size: 252.0pt x 80.97879pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 517--518
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 510--511
  [][] 
  []
 
-<images/example-03b.png, id=192, 747.9945pt x 298.11375pt>
+<images/example-03b.png, id=171, 747.9945pt x 298.11375pt>
 File: images/example-03b.png Graphic file (type png)
 
 <use images/example-03b.png>
-Package pdftex.def Info: images/example-03b.png used on input line 528.
+Package pdftex.def Info: images/example-03b.png used on input line 521.
 (pdftex.def)             Requested size: 252.0pt x 100.43391pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 528--529
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 521--522
  [][] 
  []
 
-<images/example-03c.png, id=193, 747.9945pt x 238.491pt>
+<images/example-03c.png, id=172, 747.9945pt x 238.491pt>
 File: images/example-03c.png Graphic file (type png)
 
 <use images/example-03c.png>
-Package pdftex.def Info: images/example-03c.png used on input line 531.
+Package pdftex.def Info: images/example-03c.png used on input line 524.
 (pdftex.def)             Requested size: 252.0pt x 80.34712pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 531--532
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 524--525
  [][] 
  []
 
-<images/path.png, id=200, 940.7145pt x 260.77425pt>
+<images/path.png, id=179, 940.7145pt x 260.77425pt>
 File: images/path.png Graphic file (type png)
  <use images/path.png>
-Package pdftex.def Info: images/path.png used on input line 599.
+Package pdftex.def Info: images/path.png used on input line 592.
 (pdftex.def)             Requested size: 252.0pt x 69.85689pt.
 
 [4 <./images/example-01b.png> <./images/example-01c.png> <./images/example-02b.
 png> <./images/example-02c.png> <./images/example-03b.png> <./images/example-03
-c.png>] <images/example-fail-messages.png, id=217, 736.55174pt x 214.401pt>
+c.png>] <images/example-fail-messages.png, id=195, 736.55174pt x 214.401pt>
 File: images/example-fail-messages.png Graphic file (type png)
 
 <use images/example-fail-messages.png>
 Package pdftex.def Info: images/example-fail-messages.png used on input line 60
-8.
+1.
 (pdftex.def)             Requested size: 252.0pt x 73.35338pt.
- (MODELS-2017.bbl
-Missing character: There is no â in font ptmri7t!
-Missing character: There is no € in font ptmri7t!
-Missing character: There is no ™ in font ptmri7t!
- [5 <./images/path.png> <./images/example-fail-messages.png>])
+ [5 <./images/path.png> <./images/example-fail-messages.png>] (MODELS-2017.bbl)
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -558,26 +563,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 756.
-[6
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 756.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
+[6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
  (MODELS-2017.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 756.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 756.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
 Package rerunfilecheck Info: File `MODELS-2017.out' has not changed.
-(rerunfilecheck)             Checksum: EC7954FF1A9A56E47EC6264A24813D7F;1151.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 756.
+(rerunfilecheck)             Checksum: 9798889E5F84DBA928F56B39C72B2AB4;955.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
  ) 
 Here is how much of TeX's memory you used:
- 8607 strings out of 493334
- 136845 string characters out of 3136675
- 382131 words of memory out of 3000000
- 11952 multiletter control sequences out of 15000+200000
- 38120 words of font info for 76 fonts, out of 3000000 for 9000
+ 8601 strings out of 493334
+ 136740 string characters out of 3136675
+ 381094 words of memory out of 3000000
+ 11949 multiletter control sequences out of 15000+200000
+ 39227 words of font info for 77 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 44i,12n,49p,1378b,1016s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,49p,1585b,1022s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86
@@ -585,9 +592,9 @@ iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86
 9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on MODELS-2017.pdf (6 pages, 842498 bytes).
+Output written on MODELS-2017.pdf (6 pages, 844198 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 114 named destinations out of 1000 (max. 500000)
- 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 300 PDF objects out of 1000 (max. 8388607)
+ 110 named destinations out of 1000 (max. 500000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

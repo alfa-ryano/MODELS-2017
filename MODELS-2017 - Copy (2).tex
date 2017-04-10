@@ -400,33 +400,40 @@ model-driven, gameful, software modelling, learning, platform
 \IEEEpeerreviewmaketitle
 
 
+
 \section{Introduction}
-Gameful approach, whether gamification \cite{stieglitz2016gamification}, serious games \cite{dorner2016serious}, and digital game-based learning \cite{san2015games}, have been proven to have significant positive impact on variety of purposes, such as learning, skill aquisitions, engagement, pyschological supports, socialisation, etc. \cite{connolly2012systematic, hamari2014does}. Duolingo, an application for learning new language (\url{https://www.duolingo.com/}), and Re-mission, a game to learn dealing with cancers  (\url{http://www.re-mission.net}, are two popular examples of the gameful approach. On the other side, the application of gameful approach in software engineering, especially software modelling, only has fewer studies since it's quite new and therefore more studies are needed \cite{Pedreira2015}. This condition encourages us to apply it in software modelling learning, an area which has received little attention for the application of gameful approach so far. It broadens opportunity not only to produce a novel approach to software modelling teaching and learning but also to improve gamification processes through the application of Model-Driven Engineering approaches.
 
-The followings are the organisation of this paper. First, we begin our paper with an introduction to the background and motivation of our work. Next, we briefly explain some related works to position our study in the context of the Game-Learning Analytics related research. Subsequently, we describe the method used in our research. Afterward, we present and discuss our findings. We then close our paper with conclusions and propose some design implications based on our findings. 
+\section{Rationale}
+Software modelling teaching and learning (SMTL) has significant role in model-driven domain, since it establishes the very foundation in Model-driven Engineering (MDE) learners whom in the future will be MDE experts and practitioners. If the process of SMTL can be improved, it will bring benefits not just to learners but also to model-driven domain and wider related domains. So, what are the challenges in SMTL? How they should be addressed? 
 
-\section{Problem Analysis}
-In order to engage continously in an activity, for example learning, learners have to be introduced to new more difficult challenges once their competence grow as implied by the concept of Flow \cite{csikszentmihalyi2014toward}. As the challenges increase their competence will grow as well. In facing the challenges, learners have to be given supports and then reduced step by step until they are capable enough to solve the challenge by themselves as suggested by scaffolded learning \cite{wood1976role, vygotsky1978mind}. Scaffolding can be  performed Therefore, in order to master software modelling, learners should be exposed progressively from simple to complex modelling scenarios and this approach should be able to be expressed by tutors in their learning activity design. 
+The first challenge is the abstraction. It is the very nature attribute of modelling since modelling is the process of thinking abstractly about systems \cite{bezivin2009teaching}. Some writers emphasise the cruciality of abstraction in computer science and software engineering \cite{Kramer2007, hazzan2008reflections, Saitta2013} in general as well as model-driven domain  \cite{engels2005teaching, borstler2012teaching, whittle2013industrial, brambilla2012model} in particular. 
 
-Another challenge is transforming software modelling learning activity into gameful activity. Gameful design steps \cite{deterding2015lens} suggested that in order to apply gamification the core activity has to be identified and then gameful modification could be applied. Similar to many simulation games, the core activites should be the ones that are performed by learners (flight simulators, first-person shooting games, football managers, etc.). Commonly, modelling activities in software modelling are constructing abstraction in the form of 2D diagram using visual modelling languages. Constructing model using diagrams is like playing tile and constrution games (e.g. Tetris and Lego Construction) where elements have to be arranged in such a way in order for game to move forward or complete. It requires designing, planning, and building mental image of part or overall of solution before executing actions. Model construction is an activity that falls into the category of creating in Bloom's taxonomy \cite{krathwohl2002revision}. The LM-GM framework \cite{arnab2015mapping} maps the Bloom's creating category into design, editing, strategy, and planning game mechanics whose activities are also performed in model construction. Thus, the modelling activity using diagrams could also be used as the game mechanics since the activity is similar to tile and construction games. However, the irrelevant activities should be removed, automated, or already executed so learners can focus on the relevant ones \cite{deterding2015lens}.
+The nature of abstraction makes the concepts being learned are difficult to access since the concepts are only accessible through tangible representation, such as symbols and diagrams \cite{Duval2006}. Even though the abstract concepts have visualized, engagement can still be an issue, that is making learners to actively participate in learning processes. This is the condition where gameful approach comes into play to solve motivational issues. Game elements can be embedded into learning activities to present gameful experience.  
 
-Therefore, in playing the games, learners are provided with an empty or incomplete diagram and asked to construct or modify it so that it becomes consistent with a given problem description and instruction. We name this kind of play as construction gameplay. Some other forms of play are also feasible to be implemented, particularly if different categories in Bloom's taxonomy \cite{krathwohl2002revision} are needed to be addressed. For example,  learners are provided with a problem description and a number of diagrams reflecting candidate solutions and needs to select the correction solution(s). Other form is learners are provided with a diagram and number of statements in natural languages and needs to select the correct interpretation(s) or statement(s). We called these two forms of play as multiple-choice gameplay. Both are more appropriate if we want to address the evaluating category of Bloom's taxonomy \cite{krathwohl2002revision}.
+Other problem is to posses abstraction skills--ability to perform abstractive operations, such as selecting the appropriate abstraction level, moving through different abstraction levels, and view abstraction from different perspectives. To learn the abstraction skills,  Some experts suggest that teaching and learning abstraction should start from familiarizing with real-world objects an then move upwards to abstraction through similarity \cite{engels2005teaching,white2010teaching}. However, the process of abstraction could continue to move downwards to reification and then finally to application\cite{white2010teaching}. Hazzan suggests that in order to grasp abstract concepts, they should be experienced--seen, felt, and used. Therefore, the concepts should be illustrated, reflected, and practised by learners \cite{hazzan2008reflections}. Supporting tutors to perform these approaches will help them tackling the abstraction challenge. 
+  
+The second challenge is the contents of SMTL. Some experts suggest the contents should be definitions, semantics, syntaxes, notations of modelling \cite{Borstler2012}, other experts point the core concepts of MDE--modelling, metamodelling, and model transformation--and their applications \cite{bezivin2009teaching}, and others prompt the engineering aspect of software modelling should not be neglected \cite{paige2014bad}. While main ideas of the contents have been proposed by experts, the detail structures how the contents should be organised is not clear yet. For example, statechart modelling has concepts of states, transitions, decisions, regions, and etc. There might be some structures that are best these concepts for teaching and learning statechart modelling and it is good to follow such structures. However, there are no 'one-for-all' structures that fit to all contexts, creativity of tutors, and learners. So rather than only following the best structures, it is best to support tutors to express organisation of the contents based on their preferences and needs, regardless whether they are inspired by the best structures or not.
 
-For the construction gameplay, a graphical editor through which the user can construct/modify solutions is needed. Ideally, the editor should be fully integrated with the game to provide live feedback and an immersive experience (i.e. an alternative would be to ask the user to create/edit models in an existing modelling tool and upload them to the game). If the graphical editors are wanted to be embedded into the game, a standardised way to define the abstract and graphical syntaxes of supported languages is required. Also, for the constructive gameplay there are more than one ways to assess consistency and correctness. One option is to require that the provided diagram is a 1:1 match with a reference solution provided by the game designer. A more relaxed approach is to only require that the provided solution satisfies a number of constraints. Another option is to require some sort of semantic equivalence between the two models (e.g. class diagrams that are consistent with the same object diagram). Moreover, tutors need to be able to define different types of levels and link them up to assemble complex games.
+The third challenge is the teaching and learning Approaches. One approach in to teach software modelling broadly, throughout, and not deeply\cite{Borstler2012, paige2014bad}, so they learn to decide which modelling process is more appropriate than others \cite{Akayama2013}. Other approach is harnessing modelling tools which are very important to tackle large-scale modelling and ecourage to produce good models \cite{Akayama2013}. However, failure to provide enough supports (e.g. helpful instructions and expert tools) might overwhelm learners with unnecessary features \cite{liebel2015ready}. These are just two Approaches of many other Approaches proposed by experts in software modelling. On the other side, the field of pedagogy also have employed collections of approaches for teaching and learning in general, for examples, Bloom's taxonomy \cite{krathwohl2002revision}, Kolb's experiential learning \cite{kolb2014experiential}, and Keller's ARCS motivational model \cite{keller2010motivational}. All of these approaches are worth to be considered in SMTL and should not be neglected. However, considering the same reason that applies to contents there are no 'one-for-all' approaches, it is best to support tutors to design their own approaches in SMTL, whether they follows the existing approaches or their own creativity.   
 
-Rewards are a major element of learning games allowing users to develop a sense of achievement, show off their new skills, compare themselves against other users, etc. So far, there are two types of rewards in this game, positive reinforcement and achievements. Positive reinforcement is presented in the form of sounds, visual effects, or encouraging texts to give feedback to players whether they are making good or bad actions while playing. Positive reinforcement are intended to improve the self-efficacy of players by keeping them informed of their progressing whether they are heading to the right direction or not so they can decide and continue execute their next actions \cite{richter2015studying}. Other reward is list of players' achievements. Basically, the list acts like a 'CV' for learners. It inform the names, types, and numbers of levels and learning patterns that they have been completed. Since a learning pattern usually address a concept in software modelling, completing the pattern could be used as base to claim that the learners have aquired the competence--knowledge and skill--for that concept which is rewarding to them \cite{richter2015studying}. Building learners' competence also means stregthening their intrinsic motivation \cite{ryan2017self} which could lead to meaningful gaming activity \cite{nicholson2015recipe}.
+On the other side, MDE provides a convenient way to produce software \cite{stahl2006model}. The software itself could act as a platform for tutors to create 
+contents and approaches for teaching certain concepts in software modelling in the form of 
+learning activities and also for learners to engage with the learning activities. MDE offers the advantages to speed up the development of the learning activities. First, using the platform, tutors can harness a high-level visual modelling language to design the learning activities at high-level abstraction. Second, the platform automates the generation of runnable instances of the learning activity design, which with the runnable instances learners can perform software modelling learning.
 
-\section{Solution Overview}
- The platform implement a metamodel-annotation-based approach for defining the concrete syntax of modelling language. 
-  \\ A model-to-text transformation that produces web-based graphical editors from annotated metamodels on top of the MxGraph framework.
-  \\ A modelling language for defining and linking up different types of levels
-    \\ Currently only c-type levels are supported and the correctness of solutions is assessed using EVL constraints that the game designer has specified for each level. The remaining level types and validation approaches as well as reward mechanisms are under implementation
-  \\ A model-to-text transformation for transforming level models into a complete playable game
-  \\ A web-based framework that can host a number of generated games and provides features such as authentication, progress management etc.
-  \\ Possible extensions
-    \\ A fine-grained logging framework that will allow game designers to replay solutions and understand how users interact with the game
-    \\ Automated model mutation to automatically generate incorrect alternatives in a-type levels
-    \\ A facility that monitors the progress of a user and adapts the game accordingly (e.g. displays fewer instructions and allows fast learners to skip levels) 
+To sum up, in order to improve SMTL, two conditions have to be met. First, SMTL should be engaging for learners. This could be done through embedding game elements into learning activities. Second, SMTL should be creative. Tutors are given supports to create new and reuse existing SMTL contents and approaches, whether inspired by existing good practices or just according to their own creativity. Thus, to satisfy these conditions, a platform for model-driven gamified software modelling learning is proposed. It is an environment for tutors where they can create new and make use of existing software modelling learning activities for teaching and for learners to learn software modelling topics in a gameful way.
+
+Once the platform can be fully utilised, it will empower tutors to express their creativity in producing different patterns of learning activities, whether the learning activities are based on existing best practices or new approaches in teaching certain concepts in SMTL. The platform will also ease learners in learning software modelling since the learning activities are presented a gameful way. As soon as many learning activities are available, the learners can choose learning patterns that is best for them and exercise through many different patterns. 
+
+All interaction of tutors and learners with the platform can be logged and logs are the source of data which further could be used to extract knowledge to understand deeper about  teaching and learning behaviours in software modelling. Using analytical techniques, such as machine learning and data mining, questions like which part or learning activity that learners often make mistakes, what parts of software modelling that are most challenging for them, what strategies that they prefer to use to construct models for certain problems, and many other questions could be answered and understood. The understanding that could change the way software modelling is taught and learned. Moreover, the platform could also be a place for research and experiment. For example, comparing two learning patterns which one is better in teaching one same concept in software modelling and  investigating which shapes that are more appropriate to represent a certain concept in a visual modelling language. With further development, the platform could also support 'multiplayers' which means collaboration in SMTL could also be supported. This also means concepts like collaborative learning and content creation can also be tested and applied into SMTL. 
+
+
+
+\section{Design}
+
+\subsection{Gameful Design}
+\subsection{Pedagogical Design}
+\subsection{Model-Driven Design}
+
 
 
 \section{Demonstration}
@@ -439,8 +446,8 @@ In order for the platform to support modelling in statechart diagram, designers 
 \centering
 \begin{lstlisting}
 abstract class Node extends Entity {
-  ref Edge[\\]#source outgoing;
-  ref Edge[\\]#target incoming;
+  ref Edge[*]#source outgoing;
+  ref Edge[*]#target incoming;
 }
 
 @node(label="name", dhape="startState", whiteSpace="wrap", html="1", fillColor="#000000", width="30", height="30")
@@ -603,18 +610,9 @@ Every attempt to change the model will trigger an operation to validate the curr
 \label{example-fail-messages}
 \end{figure}  
 
-\section{Evaluation Plans}
-(for each plan you can discuss its feasibility and challenges)
-  * Assess the effectiveness of modelling games vs. class-based lecturing using controlled experiments involving undergraduate and postgraduate students
-  * Assess the effectiveness of different types of levels / reward mechanisms
-  * Assess the development effort needed to develop a complete game for a non-trivial modelling language and the savings realised using the model-driven approach 
-  
+\section{Challenges and Open Issues}
+
 \section{Related Works}
-There are not many studies that investigate the application of gameful approach in in software modelling. Stikkolorum et al. \cite{Stikkolorum2014} develop a game that is intended to teach software design principles, such as cohesion, coupling, information hiding, and modularity in object-oriented software design. Groenewegen et al. \cite{Groenewegen2010} apply gamification to improve stakeholders' understanding of their enterprise architecture models as well as to validate them. In the domain of information security modelling, Ionita et al.\cite{Ionita2015} develop a socio-technical modelling language (TREsPASS) that maps information on security-related concepts toward tangible representation. In the context of activity diagram learning, Richardsen \cite{Richardsen2014} develops a game, whose behaviours are controlled through an UML activity diagram. 
-
-Each study addresses different topics in software modelling. However, none of them addresses the core topics of Model-Driven Engineering---modelling, meta-modelling, and model transformation, which means that there is an opportunity for novel research in the area. We also found that each study addressed its topic with different approaches and game elements, which also challenges us to develop a more generic design in addressing software modelling learning problems. Moreover, the common drawbacks of the studies are that most of them did not consider the pedagogical aspect of their solution and their validation was weak in sample size as well as the lack of discussion of internal validity. Nevertheless, all of the studies reported that their gamified approaches have a positive effect---it is motivating and engaging users in varying degrees, which confirms that gamification has a positive impact on motivation.
-
-Some constructive findings are identified to improve the quality of our research and SMLG design. First, the quality of models created by learners has to be measured to give them feedback how good the models are. Software metrics could be applied to measure the quality. Second, evaluation should conform to the standard criteria of good research practices in terms of sample size and internal validity. Third, pedagogical aspect should be integrated into the SMLG design.
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
@@ -651,7 +649,7 @@ Some constructive findings are identified to improve the quality of our research
 % Watch out that the combined width of all the subfigures on a 
 % line do not exceed the text width or a line break will occur.
 %
-%\begin{figure\\}[!t]
+%\begin{figure*}[!t]
 %\centering
 %\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
 %\label{fig_first_case}}
@@ -660,7 +658,7 @@ Some constructive findings are identified to improve the quality of our research
 %\label{fig_second_case}}
 %\caption{Simulation results for the network.}
 %\label{fig_sim}
-%\end{figure\\}
+%\end{figure*}
 %
 % Note that often IEEE papers with subfigures do not employ subfigure
 % captions (using the optional argument to \subfloat[]), but instead will
@@ -715,7 +713,7 @@ Some constructive findings are identified to improve the quality of our research
 % conference papers do not normally have an appendix
 
 
-% use section\\ for acknowledgment
+% use section* for acknowledgment
 \section*{Acknowledgment}
 This research is part of a doctoral programme supported by \emph{Lembaga Pengelola Dana Pendidikan Indonesia} (Indonesia Endowment Fund for Education).
 
