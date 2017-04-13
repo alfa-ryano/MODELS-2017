@@ -125,13 +125,18 @@ D.~S. Kolovos, A.~Garc{\'\i}a-Dom{\'\i}nguez, L.~M. Rose, and R.~F. Paige,
   graphical model editors,'' \emph{Software \& Systems Modeling}, pp. 1--27,
   2015.
 
+\bibitem{kolovos2010epsilon}
+D.~Kolovos, L.~Rose, R.~Paige, and A.~Garc{\i}a-Dom{\i}nguez, ``The epsilon
+  book,'' \emph{Structure}, vol. 178, pp. 1--10, 2010.
+
+\bibitem{steinberg2008emf}
+D.~Steinberg, F.~Budinsky, E.~Merks, and M.~Paternostro, \emph{EMF: eclipse
+  modeling framework}.\hskip 1em plus 0.5em minus 0.4em\relax Pearson
+  Education, 2008.
+
 \bibitem{kolovos2006eclipse}
 D.~S. Kolovos, R.~F. Paige, and F.~A. Polack, ``Eclipse development tools for
   epsilon,'' in \emph{Eclipse Summit Europe, Eclipse Modeling Symposium}, vol.
   20062, 2006, p. 200.
-
-\bibitem{kolovos2010epsilon}
-D.~Kolovos, L.~Rose, R.~Paige, and A.~Garc{\i}a-Dom{\i}nguez, ``The epsilon
-  book,'' \emph{Structure}, vol. 178, pp. 1--10, 2010.
 
 \end{thebibliography}
