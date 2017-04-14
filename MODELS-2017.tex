@@ -69,12 +69,16 @@
   		basicstyle=\ttfamily\scriptsize,
   		frame=single,
   		breaklines=true,
+  		numbers=left,
+  		xleftmargin=2.5em,
+  		framexleftmargin=0em,
   		emph={
         	class, extends, operation, abstract,
-        	@node, context, constraint, check,
+        	context, constraint, check,
         	for, if, return, true, and, ref,
-        	message, in, @namespace, package, @diagram,
-        	val, attr, @link, @compartment
+        	message, in, package, val, attr, 
+        	@link, @node, @compartment,
+        	@namespace, @diagram
     	},
     	emphstyle=\textbf
 	}
@@ -115,7 +119,7 @@
 % \cite{} output to follow that of the IEEE. Loading the cite package will
 % result in citation numbers being automatically sorted and properly
 % "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
-% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% cite.sty will become [1], [2], [5]----[7], [9] using cite.sty. cite.sty's
 % \cite will automatically add leading space, if needed. Use cite.sty's
 % noadjust option (cite.sty V3.8 and later) if you want to turn this off
 % such as if a citation ever needs to be enclosed in parenthesis.
@@ -436,12 +440,17 @@ Rewards are a major element of learning games allowing users to develop a sense 
 
 \section{Solution Overview}
 \label{Solution Overview}
+%ideally, this section should lave the same headers as the previous one i.e. "Types of levels", "Assessing correctness", "Rewards" etc. for better traceability)
 
-(ideally, this section should lave the same headers as the previous one i.e. "Types of levels", "Assessing correctness", "Rewards" etc. for better traceability)
+A web-based framework has been developed to facilitate the development of software modelling games in line with the concerns discussed in the Problem Analysis section. The framework implements a metamodel-annotation-based approach for defining the concrete syntax of the modelling language. Metamodels are defined in Ecore \cite{steinberg2008emf} and Eugenia-like annotations \cite{kolovos2015eugenia}(\url{http://www.eclipse.org/epsilon/doc/articles/eugenia-gmf-tutorial/}). So far, not all the Eugenia-like annotations are supported. However, with the current annotations supported, tutors can define a class as the root object of a metamodel (annotated with {\fontfamily{pcr}\selectfont @diagram}), denote a class to appears as a node ({\fontfamily{pcr}\selectfont @node}) or link ({\fontfamily{pcr}\selectfont @link}), and denote a containment reference to appear as a compartment where elements that fits with the type of the reference can be set as the compartment sub-elements ({\fontfamily{pcr}\selectfont @compartment}). The annotated classes are displayed as visual elements in a web-based graphical editor built upon the MxGraph framework (\url{https://jgraph.github.io/mxgraph/}). Tutors can adjust the appearance of the visual elements by setting their attributes and their values as the annotations' parameters as long as the attributes are supported by the MxGraph framework. This also means that every graphical syntaxes that are possible in the framework is also possible to be expressed in the visual editor.   
 
-A web-based framework has been developed to facilitate the development of software modelling games in line with the concerns discussed in the Problem Analysis section. The framework implements a metamodel-annotation-based approach for defining the concrete syntax of the modelling language. Metamodels are defined in Ecore and Eugenia-like annotations \cite{kolovos2015eugenia}. 
+%Add a diagram of the artefacts here
 
-The annotated metamodel then transformed using Epsilon \cite{kolovos2010epsilon} and EMF \cite{steinberg2008emf} to generate the Java code of the metamodel as the backbone codes for further model operations. The transformation also produces Javascript code that implements a language-specific web-based graphical editor built on top of the MxGraph framework (\url{https://jgraph.github.io/mxgraph/}). After the generation, tutors can create models using visual modelling language defined by the metamodel.
+The annotated metamodel then transformed using Epsilon \cite{kolovos2010epsilon} and EMF \cite{steinberg2008emf} to generate the Java code of the metamodel for further model operations on server, such as model validation and transformation. The transformation also produces Javascript code that implements a language-specific web-based graphical editor built on top of the MxGraph framework. 
+
+After the generation, tutors can create models using visual modelling language defined by the metamodel.
+
+
 
 A modelling language has also been defined to define and link up different types of levels. We name the models constructed by this modelling language as learning pattern models (for example, see Fig. \ref{eoml}). Currently, elements that are supported by the modelling language are activity, objective, model, start, end, transition, and link. The activity element represents activity that is usually found in a learning process. In an activity, tutors need to define lesson, instruction, and the name of the metamodel of intended learning. They also need to define one or more objective elements that learners have to meet in an activity in order to complete it. A model element is an element that refers to an existing model that already created by tutors or a model that will be produced by an activity. The model is used as the base model when learners start an activity, so they don't have to create the model from the beginning. Start and end elements indicate where a learning pattern should start and ends. Transition element is a directed edge that connects an activity to another, and link element is also directed edge that connects a model to an activity and \textit{vice versa}.
 
@@ -465,7 +474,7 @@ abstract class Node extends Entity {
   ref Edge[*]#source outgoing;
   ref Edge[*]#target incoming;
 }
-class Edge extends Entity {
+abstract class Edge extends Entity {
   ref Node#outgoing source;
   ref Node#incoming target;
 }
@@ -507,7 +516,12 @@ Some possible extensions that are planned for the framework are as follows. Firs
 In this section, an example is presented to demonstrate the use of the framework in a game that introduce the concept of substates in UML statechart modelling. In this demonstration, learners are assumed already understand the concept of states, transitions, start state, and final state. The following subsections are the order of the statechart from its definition to be fully used in a game play.
  
 \subsection{Define Statechart Metamodel}
-For the framework to support modelling in statechart diagram, designers should define its metamodel first. For example, the definition of Start State derived from Node class is displayed in Listing \ref{metamodel}. Other basic elements of statechart diagram, such as states, transitions, end states, etc., are also defined but not displayed in the listing.  
+For the framework to support modelling in statechart diagram, designers should define its metamodel first as showed in Listing \ref{metamodel}. 
+At line 1 and 2, the namespace and package of the metamodel is defined---uri, prefix, and package are set into "statechart"---to determine the namespace and package names for the generated Java code. After that, Statechart class is defined and annotated with {\fontfamily{pcr}\selectfont @diagram} to denote that the object of Statechart class are the root object of the metamodel (the diagram). This class has a containment reference named 'entities' with Entity type. Thus, every object that has Entity class as its predecessor can be set as an element of the Statechart diagram (line 4-7).  
+
+The statechart diagram is intended to only support six basic elements: state, note, start, end, transition and link. Therefore, six classes are specified to represent the elements (line 21, 24, 27, 32, 35, 38). State, node, start, and end elements are nodes in the diagram. Thus, their classes are derived from Node class and each of them is annotated with {\fontfamily{pcr}\selectfont @node}, as well as its MxGraph-related attributes (e.g. FillColor, Width, Height, Shape, etc.), to determine its appearance in the diagram (line 26, 31, 34, 37). Similarly, transition and link are edges in the diagram and therefore they are derived from Edge class and annotated with {\fontfamily{pcr}\selectfont @link} (line 20, 21, 23, 24). Particular for State class, it has a containment reference named substates that also has type State class. This means the State class can also contain substate that has the same class with State class. The substates is annotated with {\fontfamily{pcr}\selectfont @compartment} which means, in the diagram, a state has a container where other states can be put inside it to become substates (line 28-29).
+
+Node class has two references: outgoing and incoming. Both have the same type, Edge. The outgoing and incoming references refer to edges that come out from and go into a node (line 13-14). Edge class also has two references: source and target. Both have the same type, Node class. The source and target references point to a node that an edge comes from and goes in (line 17-18). Both classes are derived from Entity class that has two attributes, name and description. Both have the same type, String (line 9-10). Every class that has Entity class as its predecessor also has both attributes.        
 
 \begin{lstlisting}[style=interfaces,caption={A definition of Start State derived from Node class using Emfatic and Eugenia-like annotations.},label=metamodel]
 @namespace(uri="statechart", prefix="statechart")
@@ -554,7 +568,7 @@ class End extends Node {
 \subsection{Create Statechart Model}
 Using the generated graphical editor (Fig. \ref{ide}), designers can now create statechart models. The editor has a pallete on the left side that contains elements of statechart's elements which they can drag and drop into a drawing area on the centre where they can arrange the elements to construct statechart models. The editor also has a property panel on the right side to modify the attributes and appearance of the models. Models that have been created can be saved and loaded again for further operations. The editor also can be used to create models as input/base models to be embedded in learning activities.        
 
-\begin{figure}[th]
+\begin{figure}[!t]
 \centering
 \includegraphics[width=\linewidth]{ide}
 \caption{The MxGraph-based graphical editor to create statechart models.}
@@ -564,7 +578,7 @@ Using the generated graphical editor (Fig. \ref{ide}), designers can now create 
 \subsection{Create Learning Pattern Model}
 To teach and learn a concept, designers should design a learning pattern that consists of ordered learning activities. In this example, a learning pattern to learn the concept of substates is created (Fig. \ref{eoml}). The case that is selected is an electrical fan that has two main states, Idle and Blowing. Learners will be asked to modify the Blowing state, so it becomes a composite state that has several substates that represent the different speed of blowing. The learning pattern has three activities, namely One-Speed Fan, Two-Speed Fan, and Tree-Speed Fan. The activities are arranged \textit{per se} to accommodate Flow state \cite{csikszentmihalyi2014toward} so learners can start learning from the easiest activity to the hardest one. The activities are explained in more detail in the next following subsections.
   
-\begin{figure}[th]
+\begin{figure}[!t]
 \centering
 \includegraphics[width=\linewidth]{eoml}
 \caption{A learning activity pattern for learning the concept of Substates in state-machine modelling.}
@@ -573,7 +587,7 @@ To teach and learn a concept, designers should design a learning pattern that co
 
 Each activity has a lesson and instruction properties. Lesson contains an explanation about the concepts that are being taught, and instruction contains commands or questions that learners need to execute or answer. In the process of satisfying the instruction in each activity, one or more objectives should be met by learners to move to next activity. Also, each activity can consume existing models (Model A, B, and C in Fig. \ref{eoml}) as its base models, so learners do not have to create a model from scratch and produce a model (Model B in Fig. \ref{eoml}) to be used in its next activity. Each of the models also has a description property to describe itself which is very useful for learners to understand about the model. An example of the lesson, model description, and instruction properties of the One-Speed Fan activity (Fig. \ref{eoml}) is displayed in Fig. \ref{example-01a}.    
 
-\begin{figure}[th]
+\begin{figure}[!t]
 \centering
 \includegraphics[width=\linewidth]{example-01a}
 \caption{Lesson, model description, and instruction.}
@@ -585,7 +599,7 @@ In this activity (Fig. \ref{example-01}), learners are introduced to one substat
 
 The example case in this activity is a fan that has three buttons, a Power Button to turn on/off, a Button 1 to start blowing, and a Button 0 to stop blowing. So far it has only one speed, Speed 1, but is planned to have more than one speed. Learners are asked to modify the Blowing state in Fig. \ref{example-01b} into a composite state through moving the Speed 1 state into the Blowing state compartment as well as to connect the Button 1 Pressed transition from the Idle state to the Speed 1 state. Since in Fig. \ref{eoml} this activity is designed to have only two objectives, the two objectives are adjusted and defined as follow: Objective 1 "The Blowing state contains the Speed 1 substate" and Objective 2 "Button 1 Pressed transition connects the Idle state to the Speed 1 substate".
 
-\begin{figure}[th]
+\begin{figure}[!t]
     \centering
     \subfloat[Base model]{\includegraphics[width=\linewidth]{example-01b}	
     \label{example-01b}}
@@ -599,7 +613,7 @@ The example case in this activity is a fan that has three buttons, a Power Butto
 \subsubsection{Two-Speed Fan Activity}
 The Two-Speed Fan activity (Fig. \ref{example-02}) consumes the model that has been produced in the first activity (Model B in Fig. \ref{eoml}). Therefore, any model generated in the previous activity will become the base model for modelling in this activity. Inline to the Flow concept \cite{csikszentmihalyi2014toward}, this second activity should be more challenging. Therefore, the activity (Fig. \ref{example-02}) challenge learners with one additional state and three new transitions. Now the case has changed. The fan has an extra button, Button 2, to support 2-speed blowing. When Button 1 is pressed, the fan blows in speed 1. When Button 2 is pressed, the fan blows in speed 2. Thus, Learners are required modify the Blowing state into a composite state, so it has two-speed states. The fan can move from the Idle state to the Speed 1 state, from the Idle state to the Speed 2 state, and from the Speed 1 state to the Speed 2 state or \textit{vice versa}.
 
-\begin{figure}[th]
+\begin{figure}[!t]
     \centering
     \subfloat[Base model]{\includegraphics[width=\linewidth]{example-02b}	
     \label{example-02b}}
@@ -613,7 +627,7 @@ The Two-Speed Fan activity (Fig. \ref{example-02}) consumes the model that has b
 \subsubsection{Three-Speed Fan Activity}
 The Three-Speed Fan activity (Fig. \ref{example-03}) should be harder than the second activity. The fan now supports 3 speeds of blowing, but it has been modified so it cannot go directly to Speed 2 and Speed 3 without firstly go the state with lower speed. In other words, the transition from Idle can only go to Speed 1 for the fan to start blowing--Speed 2 and Speed 3 will not be working if transition comes from the Idle state. Thus, starting from the model C as the base model as shown in Fig. \ref{eoml}, learners are required to modify the Blowing state into a composite state, so it has 3 speeds of blowing and only allow transition from Idle to Speed 1 and at a speed that is lower from the intended one to blow.
 
-\begin{figure}[th]
+\begin{figure}[!t]
     \centering
     \subfloat[Base model]{\includegraphics[width=\linewidth]{example-03b}	
     \label{example-03b}}
@@ -628,7 +642,7 @@ The Three-Speed Fan activity (Fig. \ref{example-03}) should be harder than the s
 \subsection{Generate Game}
 After finishing constructing the learning pattern (Fig. \ref{eoml}), designers can now generate a path of levels (or stages) that is usually found in many games. Each generated level corresponds to an activity defined in the learning pattern and has an EVL template for validation. The EVL template is shown in Listing \ref{validation-template} which can be extended by designers to write code that fits with the level scenarios and objectives. The number of constraints and operations in the template corresponds to the number of objectives defined in the level's learning pattern activity in Fig. \ref{eoml}. As an example, implementation of validation, Listing \ref{validation-realisation} shows the EVL code of checking whether Blowing state has already Speed 1 substate as intended by Objective 1 in One-Speed activity.   
 
-\begin{lstlisting}[caption={Validation template for objectives in One-Speed Fan activity/level.},label=validation-template]
+\begin{lstlisting}[style=interfaces,caption={Validation template for objectives in One-Speed Fan activity/level.},label=validation-template]
 context Statechart {
     constraint obj_1 {
         check: self.obj_1()
@@ -648,7 +662,7 @@ operation Statechart obj_2(): Boolean {
 \end{lstlisting} 
 
 
-\begin{lstlisting}[caption={Validation realisation for Objective 1 in One-Speed Fan activity/level.}, label=validation-realisation]
+\begin{lstlisting}[style=interfaces,caption={Validation realisation for Objective 1 in One-Speed Fan activity/level.}, label=validation-realisation]
 context Statechart {
     constraint obj_1 {
         check: 
@@ -672,7 +686,7 @@ operation Statechart obj_1(): Boolean {
 \subsection{Play Game}
 After generating the learning pattern into a path of ordered levels and defining its levels' validation, Learners can choose the path and play its levels as depicted in Fig. \ref{path}. When learners choose the first level, an MxGraph-based editor is displayed. Lesson, model description, instruction, objectives, and base model are presented to learners. Learners then can start to modify the base model to reach the target model. 
 
-\begin{figure}[th]
+\begin{figure}[!t]
 \centering
 \includegraphics[width=\linewidth]{path}
 \caption{The path for learning substate concept with its levels.}
@@ -681,7 +695,7 @@ After generating the learning pattern into a path of ordered levels and defining
 
 Every attempt to change the model will trigger an operation to validate the current model using the defined EVL constraints to assess whether the current model has met the current level's objectives. If not, error messages are displayed to learners indicating the objectives that have not been satisfied. For example, in Fig. \ref{example-fail-messages}, the Speed 1 substate has not been put into the Blowing state even though the Button 1 Pressed transition has connected the Idle state to the Speed 1 substate. If all objectives have been fulfilled, learners have completed the level. A message that congratulates the learners is displayed to give positive reinforcement. Learners then are brought back to the learning path where they can choose the next level to play.  
 
-\begin{figure}[th]
+\begin{figure}[!t]
 \centering
 \includegraphics[width=\linewidth]{example-fail-messages}
 \caption{A message is displayed to learners indicating the objective that has not been fulfilled.}

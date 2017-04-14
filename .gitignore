@@ -46,12 +46,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# LaTex compiled files
-.aux
-.bbl
-.blg
-.dvi
-.log
-.out
-.pdf
-.synctex.gz
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.out
+*.pdf
+*.synctex.gz
