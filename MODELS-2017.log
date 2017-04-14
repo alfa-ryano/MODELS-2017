@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.30)  13 APR 2017 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.30)  13 APR 2017 22:04
 entering extended mode
 **./MODELS-2017.tex
 (MODELS-2017.tex
@@ -343,20 +343,20 @@ Package caption Info: listings package is loaded.
 ) (MODELS-2017.aux)
 \openout1 = `MODELS-2017.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 331.
-LaTeX Font Info:    ... okay on input line 331.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 331.
-LaTeX Font Info:    ... okay on input line 331.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 331.
-LaTeX Font Info:    ... okay on input line 331.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 331.
-LaTeX Font Info:    ... okay on input line 331.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 331.
-LaTeX Font Info:    ... okay on input line 331.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 331.
-LaTeX Font Info:    ... okay on input line 331.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 331.
-LaTeX Font Info:    ... okay on input line 331.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 332.
+LaTeX Font Info:    ... okay on input line 332.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 332.
+LaTeX Font Info:    ... okay on input line 332.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 332.
+LaTeX Font Info:    ... okay on input line 332.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 332.
+LaTeX Font Info:    ... okay on input line 332.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 332.
+LaTeX Font Info:    ... okay on input line 332.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 332.
+LaTeX Font Info:    ... okay on input line 332.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 332.
+LaTeX Font Info:    ... okay on input line 332.
 
 -- Lines per column: 56 (exact).
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -395,7 +395,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 331.
+Package hyperref Info: Link coloring ON on input line 332.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -405,9 +405,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count127
 )
-LaTeX Info: Redefining \ref on input line 331.
-LaTeX Info: Redefining \pageref on input line 331.
-LaTeX Info: Redefining \nameref on input line 331.
+LaTeX Info: Redefining \ref on input line 332.
+LaTeX Info: Redefining \pageref on input line 332.
+LaTeX Info: Redefining \nameref on input line 332.
 
 (MODELS-2017.out) (MODELS-2017.out)
 \@outlinefile=\write3
@@ -417,136 +417,144 @@ LaTeX Info: Redefining \nameref on input line 331.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 384.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 385.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 384.
+(Font)              <11> on input line 385.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 384.
+(Font)              <7.69997> on input line 385.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 384.
+(Font)              <5.5> on input line 385.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 384.
+(Font)              <8> on input line 385.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 384.
+(Font)              <6> on input line 385.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 384.
+(Font)              <5> on input line 385.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 384.
- [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+(Font)              <7> on input line 385.
 
 
-] [2]
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 422.
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 449.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 449.
+nput line 452.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 452.
 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <7> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 450.
- <images/ide.png, id=140, 1156.32pt x 627.5445pt>
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 453.
+ [2]
+<images/ide.png, id=154, 1156.32pt x 627.5445pt>
 File: images/ide.png Graphic file (type png)
  <use images/ide.png>
-Package pdftex.def Info: images/ide.png used on input line 465.
+Package pdftex.def Info: images/ide.png used on input line 559.
 (pdftex.def)             Requested size: 252.0pt x 136.75793pt.
-
-<images/eoml.png, id=143, 953.964pt x 380.01974pt>
+ [3 <./images/ide.png>] <images/eoml.png, id=212, 953.964pt x 380.01974pt>
 File: images/eoml.png Graphic file (type png)
- <use images/eoml.png>
-Package pdftex.def Info: images/eoml.png used on input line 475.
+
+<use images/eoml.png>
+Package pdftex.def Info: images/eoml.png used on input line 569.
 (pdftex.def)             Requested size: 252.0pt x 100.38582pt.
 
-<images/example-01a.png, id=148, 1083.44775pt x 356.532pt>
+<images/example-01a.png, id=217, 1083.44775pt x 356.532pt>
 File: images/example-01a.png Graphic file (type png)
 
 <use images/example-01a.png>
-Package pdftex.def Info: images/example-01a.png used on input line 484.
+Package pdftex.def Info: images/example-01a.png used on input line 578.
 (pdftex.def)             Requested size: 252.0pt x 82.92546pt.
- [3 <./images/ide.png> <./images/eoml.png>]
-<images/example-01b.png, id=175, 658.8615pt x 241.50224pt>
+
+<images/example-01b.png, id=224, 658.8615pt x 241.50224pt>
 File: images/example-01b.png Graphic file (type png)
 
 <use images/example-01b.png>
-Package pdftex.def Info: images/example-01b.png used on input line 497.
+Package pdftex.def Info: images/example-01b.png used on input line 591.
 (pdftex.def)             Requested size: 252.0pt x 92.36876pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 497--498
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 591--592
  [][] 
  []
 
-<images/example-01c.png, id=176, 658.8615pt x 242.1045pt>
+<images/example-01c.png, id=225, 658.8615pt x 242.1045pt>
 File: images/example-01c.png Graphic file (type png)
 
 <use images/example-01c.png>
-Package pdftex.def Info: images/example-01c.png used on input line 500.
+Package pdftex.def Info: images/example-01c.png used on input line 594.
 (pdftex.def)             Requested size: 252.0pt x 92.59912pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 500--501
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 594--595
  [][] 
  []
 
-<images/example-02b.png, id=181, 787.14075pt x 250.536pt>
+[4 <./images/eoml.png> <./images/example-01a.png>]
+<images/example-02b.png, id=278, 787.14075pt x 250.536pt>
 File: images/example-02b.png Graphic file (type png)
 
 <use images/example-02b.png>
-Package pdftex.def Info: images/example-02b.png used on input line 511.
+Package pdftex.def Info: images/example-02b.png used on input line 605.
 (pdftex.def)             Requested size: 252.0pt x 80.20755pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 511--512
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 605--606
  [][] 
  []
 
-<images/example-02c.png, id=183, 787.14075pt x 252.945pt>
+<images/example-02c.png, id=280, 787.14075pt x 252.945pt>
 File: images/example-02c.png Graphic file (type png)
 
 <use images/example-02c.png>
-Package pdftex.def Info: images/example-02c.png used on input line 514.
+Package pdftex.def Info: images/example-02c.png used on input line 608.
 (pdftex.def)             Requested size: 252.0pt x 80.97879pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 514--515
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 608--609
  [][] 
  []
 
-<images/example-03b.png, id=186, 747.9945pt x 298.11375pt>
+<images/example-03b.png, id=283, 747.9945pt x 298.11375pt>
 File: images/example-03b.png Graphic file (type png)
 
 <use images/example-03b.png>
-Package pdftex.def Info: images/example-03b.png used on input line 525.
+Package pdftex.def Info: images/example-03b.png used on input line 619.
 (pdftex.def)             Requested size: 252.0pt x 100.43391pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 525--526
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 619--620
  [][] 
  []
 
-<images/example-03c.png, id=187, 747.9945pt x 238.491pt>
+<images/example-03c.png, id=284, 747.9945pt x 238.491pt>
 File: images/example-03c.png Graphic file (type png)
 
 <use images/example-03c.png>
-Package pdftex.def Info: images/example-03c.png used on input line 528.
+Package pdftex.def Info: images/example-03c.png used on input line 622.
 (pdftex.def)             Requested size: 252.0pt x 80.34712pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 528--529
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 622--623
  [][] 
  []
 
-[4 <./images/example-01a.png> <./images/example-01b.png> <./images/example-01c.
-png> <./images/example-02b.png> <./images/example-02c.png> <./images/example-03
-b.png> <./images/example-03c.png>]
-<images/path.png, id=204, 940.7145pt x 260.77425pt>
+[5 <./images/example-01b.png> <./images/example-01c.png> <./images/example-02b.
+png> <./images/example-02c.png> <./images/example-03b.png> <./images/example-03
+c.png>] <images/path.png, id=318, 940.7145pt x 260.77425pt>
 File: images/path.png Graphic file (type png)
- <use images/path.png>
-Package pdftex.def Info: images/path.png used on input line 587.
+
+<use images/path.png>
+Package pdftex.def Info: images/path.png used on input line 677.
 (pdftex.def)             Requested size: 252.0pt x 69.85689pt.
 
-<images/example-fail-messages.png, id=206, 736.55174pt x 214.401pt>
+<images/example-fail-messages.png, id=320, 736.55174pt x 214.401pt>
 File: images/example-fail-messages.png Graphic file (type png)
 
 <use images/example-fail-messages.png>
-Package pdftex.def Info: images/example-fail-messages.png used on input line 59
+Package pdftex.def Info: images/example-fail-messages.png used on input line 68
 6.
 (pdftex.def)             Requested size: 252.0pt x 73.35338pt.
- [5 <./images/path.png> <./images/example-fail-messages.png>] (MODELS-2017.bbl)
+ [6 <./images/path.png> <./images/example-fail-messages.png>] (MODELS-2017.bbl)
 
 
 ** Conference Paper **
@@ -559,24 +567,24 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 750.
-[6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 750.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 840.
+[7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 840.
  (MODELS-2017.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 750.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 750.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 840.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 840.
 Package rerunfilecheck Info: File `MODELS-2017.out' has not changed.
-(rerunfilecheck)             Checksum: 9798889E5F84DBA928F56B39C72B2AB4;955.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 750.
+(rerunfilecheck)             Checksum: 560C42CB5C8D191CC99D663D5736AF65;1272.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 840.
  ) 
 Here is how much of TeX's memory you used:
- 8673 strings out of 493334
- 137544 string characters out of 3136675
- 380594 words of memory out of 3000000
- 12021 multiletter control sequences out of 15000+200000
+ 8813 strings out of 493334
+ 139492 string characters out of 3136675
+ 566794 words of memory out of 3000000
+ 12082 multiletter control sequences out of 15000+200000
  38635 words of font info for 78 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 44i,12n,49p,1742b,993s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,49p,1742b,1067s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Program Files (x86
@@ -585,9 +593,9 @@ iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Program Files (x86
 ype1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on MODELS-2017.pdf (6 pages, 855718 bytes).
+Output written on MODELS-2017.pdf (7 pages, 873836 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 109 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 420 PDF objects out of 1000 (max. 8388607)
+ 188 named destinations out of 1000 (max. 500000)
+ 208 words of extra memory for PDF output out of 10000 (max. 10000000)
 

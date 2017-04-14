@@ -66,14 +66,15 @@
 \usepackage{hypcap}
 \usepackage{listings}
 	\lstset{
-  		frame=single,
   		basicstyle=\ttfamily\scriptsize,
+  		frame=single,
   		breaklines=true,
   		emph={
         	class, extends, operation, abstract,
         	@node, context, constraint, check,
         	for, if, return, true, and, ref,
-        	message, in
+        	message, in, @namespace, package, @diagram,
+        	val, attr, @link, @compartment
     	},
     	emphstyle=\textbf
 	}
@@ -415,50 +416,143 @@ The paper is organised as follows. First, this paper is started with an introduc
 
 \section{Problem Analysis}
 \label{Problem Analysis}
-In order to engage continuously in a learning activity, learners have to be introduced to new more difficult challenges once their competence grows \cite{csikszentmihalyi2014toward}. In facing the challenges, learners need to be given supports and then reduced step by step until they are capable enough to solve the challenge by themselves as suggested by scaffolded learning \cite{wood1976role, vygotsky1978mind}. The scaffolding can be expressed through procedural instructions, clues, examples, small activities, and pre-made models. Therefore, in order to master software modelling, learners should be exposed progressively from simple to complex modelling scenarios but without neglecting the supports until they reach desired competence. These approaches should be able to be expressed by tutors in their learning activity design. 
+The main challenge addressed in this work is transforming software modelling learning into a gameful activity. Given that there are different types of modelling languages (e.g. graphical, textual, projectional, tree-based) and types of games (continuous vs. level-based, real-time vs. turn-based, single-player vs. multi-player) at this stage it is worth noting that our study is limited to level-based single-player games for languages with a 2D graphical syntax. We have identified the following concerns and requirements related to this transformation:
 
-The main challenge addressed in this work is transforming software modelling learning activity into gameful activity. Gameful design steps \cite{deterding2015lens} suggested that to apply gamification the core activity should be identified and then gameful modification could be implemented. Modelling is the process of creating an abstraction of reality or concept, and usually, the abstraction is displayed in the form of visual representation (e.g. symbols, graphs, diagrams, drawings). The activity 'creating' and its synonyms (e.g. constructing, building, developing) are activities that fall into the category of creating in Bloom's taxonomy \cite{krathwohl2002revision}. The LM-GM framework \cite{arnab2015mapping} maps the Bloom's creating category into the design, editing, and planning game mechanics whose activities are also performed in modelling. Thus, design, editing, and planning activities in modelling are inherent can be used as game mechanics as well. However, since we scope this research only to modelling in 2D diagrams, constructing and editing model in 2D diagrams are selected as the game mechanics of the software modelling learning.
+\subsubsection{Challenge and Support}
+In order to engage continuously in a learning activity, learners have to be introduced to new more difficult challenges as their competence grows \cite{csikszentmihalyi2014toward}. Also, learners need to be given support which should gradually reduced until they are capable enough to solve the challenge by themselves as suggested by scaffolded learning \cite{wood1976role, vygotsky1978mind}. Support can be provided through procedural instructions, clues, examples, small activities, and partial pre-made models. These approaches should be able to be expressed by tutors in their learning activity design. 
+
+\subsubsection{Game Mechanics} 
+Gameful design steps \cite{deterding2015lens} suggested that to apply gamification the core activity should be identified and then gameful modification could be implemented. Modelling is the process of creating an abstraction of reality or concept, and usually, the abstraction is displayed in the form of visual representation (e.g. symbols, graphs, diagrams, drawings). The activity 'creating' and its synonyms (e.g. constructing, building, developing) are activities that fall into the category of creating in Bloom's taxonomy \cite{krathwohl2002revision}. The LM-GM framework \cite{arnab2015mapping} maps the Bloom's creating category into the design, editing, and planning game mechanics whose activities are also performed in modelling. Thus, design, editing, and planning activities in modelling are inherent can be used as game mechanics as well. However, since we scope this research only to modelling in 2D diagrams, constructing and editing model in 2D diagrams are selected as the game mechanics of the software modelling learning.
 
 Therefore, as gameplay, learners are asked to construct or modify diagrams so that the diagrams become consistent with a given problem description and instruction. They do not have always to start modelling from empty, but could also from existing, incomplete diagrams that are premade for them to help them focus on core concepts and activities being taught\cite{deterding2015lens}. We name this kind of play as construction gameplay. Some other forms of play are also feasible to be implemented. For example, learners are provided with a problem description and a number of diagrams reflecting candidate solutions and needs to select the correction solution(s). Another form is learners are given with a diagram and number of statements in natural languages and needs to choose the correct interpretation(s) or statement(s). We called these two forms of play as multiple-choice gameplay. 
 
 For the construction gameplay, a graphical editor through which the user can construct/modify solutions is needed. Ideally, the editor should be fully integrated into the game to provide live feedback and an immersive experience (i.e. an alternative would be to ask the user to create/edit models in an existing modelling tool and upload them to the game). If the graphical editors are wanted to be embedded into the game, a standardised way to define the abstract and graphical syntaxes of supported languages is required. 
 
+\subsubsection{Assessing Correctness} 
 There are more than one ways to assess consistency and correctness for the construction gameplay. One option is to require that the provided diagram is a 1:1 match with a reference solution given by the game designer. A more relaxed approach is only to require that the provided solution satisfies a number of constraints. Another option is to require some sort of semantic equivalence between the two models (e.g. class diagrams that are consistent with the same object diagram). Moreover, tutors need to be able to define different types of levels and link them up to assemble complex games.
 
+\subsubsection{Rewards}
 Rewards are a major element of learning games allowing users to develop a sense of achievement, show off their new skills, compare themselves against other users, etc. So far, there are two types of rewards in this game, positive reinforcement and achievements. Positive reinforcement is presented in the form of sounds, visual effects, or encouraging texts to give feedback to players whether they are making good or bad actions while playing. Positive reinforcement is intended to improve the self-efficacy of players by keeping them informed of their progressing whether they are heading in the right direction or not, so they can decide and continue to execute their next actions \cite{richter2015studying}. Another reward is a list of a learner's achievements. Basically, the list acts like a 'CV' for a learner. It informs the names, types, and numbers of levels and learning patterns that they have been completed. Since a learning pattern usually addresses a concept in software modelling, completing the pattern could be used as base to claim that the learners have acquired the competence--knowledge and skill--for that concept which is rewarding to them \cite{richter2015studying}. Building a learner's competence also means strengthening their intrinsic motivation \cite{ryan2017self} which could lead to meaningful gaming activity \cite{nicholson2015recipe}.
 
 \section{Solution Overview}
 \label{Solution Overview}
-A solution, a web-based framework has been developed to address the problems presented in the Problem Analysis section. The framework implements a metamodel-annotation-based approach for defining the concrete syntax of the modelling language. The metamodel is written in Emfatic (\url{https://www.eclipse.org/emfatic}) and Eugenia-like annotations \cite{kolovos2015eugenia}. In this way, tutors can write different types of annotated metamodels to produce different types of visual modelling languages. 
 
-The annotated metamodel then transformed using Epsilon \cite{kolovos2010epsilon} and EMF \cite{steinberg2008emf} to generate the Java codes of the metamodel as the backbone codes for further model operations. The transformation also produces Javascript codes to display the metamodel's visual elements in a palette of a web-based graphical editor built on top of the MxGraph framework (\url{https://jgraph.github.io/mxgraph/}). After the generation, tutors can create models using visual modelling language defined by the metamodel.
+(ideally, this section should lave the same headers as the previous one i.e. "Types of levels", "Assessing correctness", "Rewards" etc. for better traceability)
 
-A modelling language is also created for tutors for defining and linking up different types of levels. We name the models constructed by this modelling language as learning pattern models (for example, see Fig. \ref{eoml}). Currently, elements that are supported by the modelling language are activity, objective, model, start, end, transition, and link. The activity element represents activity that is usually found in a learning process. In an activity, tutors need to define lesson, instruction, and the name of the metamodel of intended learning. They also need to define one or more objective elements that learners have to meet in an activity in order to complete it. A model element is an element that refers to an existing model that already created by tutors or a model that will be produced by an activity. The model is used as the base model when learners start an activity, so they don't have to create the model from the beginning. Start and end elements indicate where a learning pattern should start and ends. Transition element is a directed edge that connects an activity to another, and link element is also directed edge that connects a model to an activity and \textit{vice versa}.
-    
+A web-based framework has been developed to facilitate the development of software modelling games in line with the concerns discussed in the Problem Analysis section. The framework implements a metamodel-annotation-based approach for defining the concrete syntax of the modelling language. Metamodels are defined in Ecore and Eugenia-like annotations \cite{kolovos2015eugenia}. 
+
+The annotated metamodel then transformed using Epsilon \cite{kolovos2010epsilon} and EMF \cite{steinberg2008emf} to generate the Java code of the metamodel as the backbone codes for further model operations. The transformation also produces Javascript code that implements a language-specific web-based graphical editor built on top of the MxGraph framework (\url{https://jgraph.github.io/mxgraph/}). After the generation, tutors can create models using visual modelling language defined by the metamodel.
+
+A modelling language has also been defined to define and link up different types of levels. We name the models constructed by this modelling language as learning pattern models (for example, see Fig. \ref{eoml}). Currently, elements that are supported by the modelling language are activity, objective, model, start, end, transition, and link. The activity element represents activity that is usually found in a learning process. In an activity, tutors need to define lesson, instruction, and the name of the metamodel of intended learning. They also need to define one or more objective elements that learners have to meet in an activity in order to complete it. A model element is an element that refers to an existing model that already created by tutors or a model that will be produced by an activity. The model is used as the base model when learners start an activity, so they don't have to create the model from the beginning. Start and end elements indicate where a learning pattern should start and ends. Transition element is a directed edge that connects an activity to another, and link element is also directed edge that connects a model to an activity and \textit{vice versa}.
+
+\lstdefinestyle{interfaces}{
+  float=t
+}
+
+\begin{lstlisting}[style=interfaces,caption={The annotated metamodel of learning pattern modelling language.},label=pattern-metamodel]
+@namespace(uri="eoml", prefix="eoml")
+package eoml;
+
+@diagram
+class Eoml {
+  val Entity[*] entities;
+}
+abstract class Entity {
+  attr String name = "";
+  attr String description = "";
+}
+abstract class Node extends Entity {
+  ref Edge[*]#source outgoing;
+  ref Edge[*]#target incoming;
+}
+class Edge extends Entity {
+  ref Node#outgoing source;
+  ref Node#incoming target;
+}
+@link(Label="name", source="source", target="target", Label="name", EndArrow="block", BlockendFill="1", EndSize="6", Html="1", Width="120", Height="120")
+class Transition extends Edge {
+}
+@link(Label="name", source="source", target="target", Label="name", EndArrow="block", BlockendFill="1", EndSize="6", Html="1", Width="120", Height="120", Dashed="1")
+class Link extends Edge {
+}
+
+@node(Label="name", Shape="swimlane", ChildLayout = "stackLayout", Collapsible = "1", HorizontalStack="0", ResizeParent="0", ResizeLast="1", Rounded="1", MarginBottom="5", MarginLeft="5", MarginRight="5", MarginTop="5", Html="1", WhiteSpace="wrap", Width="200", Height="120")
+class Activity extends Node {
+  attr String metamodel = "";
+  @compartment(Shape="swimlane", Collapsible = "0", NoLabel="1", xEditable="0", FillColor="none", StrokeColor="none", StartSize="0")
+  val Objective[*] objectives;
+}
+@node(Label="name", Shape="rectangle", Html="1", WhiteSpace="wrap", Width="40", Height="50")
+class Model extends Node {
+  attr String metamodel = "";
+  attr String sourceModel = "";
+}
+@node(Label="name", Html="1", Shape="plus", Width="30", Height="30")
+class Objective extends Entity {
+}
+@node(Label="name", Shape="ellipse", WhiteSpace="wrap", Html="1", FillColor="#000000", Width="30", Height="30")
+class Start extends Node {
+}
+@node(Label="name", Shape="ellipse", WhiteSpace="wrap", Html="1", FillColor="#FFFFFF", Width="30", Height="30")
+class End extends Node {
+}
+\end{lstlisting} 
+
 Learning pattern models are then consumed by a model-to-text transformation to generate a complete playable game. The framework can host a number of generated games and provides features such as authentication, progress management, learning pattern inventory, model inventory, etc. The generation also produces an EVL \cite{kolovos2006eclipse} skeleton for each level where tutors define constrains and operations for validation to determine whether the level has been completed, all its objectives have been met, or not. Currently, only the construction gameplay is supported to be played at each level, and the correctness of solutions is assessed using the EVL file. The remaining level types and validation approaches, as well as reward mechanisms,  are under implementation. 
 
 Some possible extensions that are planned for the framework are as follows. First, a fine-grained logging framework that will allow game designers to replay solutions and understand how users interact with the game. Second, an automated model mutation to automatically generate incorrect alternatives in a-type levels. Third, a facility that monitors the progress of learners and adapts the game accordingly (e.g. displays fewer instructions, allows fast learners to skip levels, or recommends other related games to play).
 
 \section{Demonstration}
 \label{Demonstration}
-In this section, an example is presented to demonstrate the use of the framework. The example is to show the of teaching the concept of substates in UML statechart modelling. In this demonstration, designers are assumed to have proficient knowledge and skills of statechart diagram while learners are assumed already understand the concept of states, transitions, start state, and final state. The following subsections are the order of the statechart from its definition to be fully used in a game play.
+In this section, an example is presented to demonstrate the use of the framework in a game that introduce the concept of substates in UML statechart modelling. In this demonstration, learners are assumed already understand the concept of states, transitions, start state, and final state. The following subsections are the order of the statechart from its definition to be fully used in a game play.
  
 \subsection{Define Statechart Metamodel}
-For the framework to support modelling in statechart diagram, designers should define its metamodel first. For example, the definition of Start State derived from Node class is displayed in Listing \ref{metamodel}. Other basic elements of statechart diagram, such as states, transitions, end states, etc., are also defined but not displayed in the figure.  
+For the framework to support modelling in statechart diagram, designers should define its metamodel first. For example, the definition of Start State derived from Node class is displayed in Listing \ref{metamodel}. Other basic elements of statechart diagram, such as states, transitions, end states, etc., are also defined but not displayed in the listing.  
 
-\begin{lstlisting}[caption={A definition of Start State derived from Node class using Emfatic and Eugenia-like annotations.},label=metamodel]
-abstract class Node extends Entity {
-  ref Edge[\\]#source outgoing;
-  ref Edge[\\]#target incoming;
+\begin{lstlisting}[style=interfaces,caption={A definition of Start State derived from Node class using Emfatic and Eugenia-like annotations.},label=metamodel]
+@namespace(uri="statechart", prefix="statechart")
+package statechart;
+
+@diagram
+class Statechart {
+  val Entity[*] entities;
 }
-
-@node(label="name", dhape="startState", whiteSpace="wrap", html="1", fillColor="#000000", width="30", height="30")
+abstract class Entity {
+  attr String name = "";
+  attr String description = "";
+}
+abstract class Node extends Entity {
+  ref Edge[*]#source outgoing;
+  ref Edge[*]#target incoming;
+}
+abstract class Edge extends Entity {
+  ref Node#outgoing source;
+  ref Node#incoming target;
+}
+@link(Label="name", source="source", target="target", Label="name", EndArrow="block", BlockendFill="1", EndSize="6", Html="1", Width="120", Height="120")
+class Transition extends Edge {
+}
+@link(Label="name", source="source", target="target", Label="name", EndArrow="none", BlockendFill="1", EndSize="6", Html="1", Width="120", Height="120", Dashed="1")
+class Link extends Edge {
+}
+@node(Label="name", Shape="swimlane", ChildLayout = "stackLayout", Collapsible = "1", HorizontalStack="0", ResizeParent="0", ResizeLast="1", Rounded="1", MarginBottom="7", MarginLeft="7", MarginRight="7", MarginTop="7", Html="1", WhiteSpace="wrap", Width="200", Height="120", SwimlaneFillColor="#FFFFFF")
+class State extends Node {
+  @compartment(Shape="swimlane", Collapsible = "0", NoLabel="1", xEditable="0", StrokeColor="none", StartSize="0")
+  val State[*] substates;
+}
+@node(Label="description", Shape="note", Html="1", WhiteSpace="wrap", Width="200", Height="120")
+class Note extends Node {
+}
+@node(Label="name", Shape="startState", WhiteSpace="wrap", Html="1", FillColor="#000000", Width="30", Height="30")
 class Start extends Node {
+}
+@node(Label="name", Shape="endState", WhiteSpace="wrap", Html="1", FillColor="#FFFFFF", Width="30", Height="30")
+class End extends Node {
 }
 \end{lstlisting} 
 
 \subsection{Create Statechart Model}
-Using the MxGraph-based graphical editor (Fig. \ref{ide}), designers can now create statechart models. The editor has a pallete on the left side that contains elements of statechart's elements which they can drag and drop into a drawing area on the centre where they can arrange the elements to construct statechart models. The editor also has a property panel on the right side to modify the attributes and appearance of the models. Models that have been created can be saved and loaded again for further operations. The editor also can be used to create models as input/base models to be embedded in learning activities.        
+Using the generated graphical editor (Fig. \ref{ide}), designers can now create statechart models. The editor has a pallete on the left side that contains elements of statechart's elements which they can drag and drop into a drawing area on the centre where they can arrange the elements to construct statechart models. The editor also has a property panel on the right side to modify the attributes and appearance of the models. Models that have been created can be saved and loaded again for further operations. The editor also can be used to create models as input/base models to be embedded in learning activities.        
 
 \begin{figure}[th]
 \centering
@@ -537,16 +631,12 @@ After finishing constructing the learning pattern (Fig. \ref{eoml}), designers c
 \begin{lstlisting}[caption={Validation template for objectives in One-Speed Fan activity/level.},label=validation-template]
 context Statechart {
     constraint obj_1 {
-        check: 
-            self.obj_1()
-        message:
-            "FAIL: ob_1"
+        check: self.obj_1()
+        message: "FAIL: ob_1"
     }
     constraint obj_2 {
-        check: 
-            self.obj_2()
-        message:
-            "FAIL: obj_2"
+        check: self.obj_2()
+        message:"FAIL: obj_2"
     }        
 }
 operation Statechart obj_1(): Boolean {
